@@ -9,6 +9,8 @@ gem 'sqlite3'
 
 gem 'devise'
 
+gem 'thin'
+
 gem 'paperclip'
 
 gem 'activeadmin'
