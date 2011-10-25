@@ -1,0 +1,64 @@
+<h2>Redigera profil</h2>
+
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="field">
+    <%= f.label :fname, "Förnamn" %><br />
+    <%= f.text_field :fname %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :lname, "Efternamn" %><br />
+    <%= f.text_field :lname %>
+  </div>
+  <div class="field">
+    <%= f.label :bday, "Födelsedag" %><br />
+    <%= f.text_field :bday %>
+  </div>
+  <div class="field">
+    <%= f.label :tele, "Telefon" %><br />
+    <%= f.text_field :tele %>
+  <div class="field">
+    <%= f.label :address, "Adress" %><br />
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :areacode, "Postnummer" %><br />
+    <%= f.text_field :areacode %>
+  </div>
+  <div class="field">
+    <%= f.label :city, "Ort" %><br />
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :looking_for, "Söker jobb inom" %><br />
+    <%= f.select(:looking_for,[['Kontor', 'Kontor'], ['Lager/Industri', 'Lager/Industri'], ['Data/IT', 'Data/IT']]) %>
+  </div>
+  <div class="field">
+    <%= f.label :education, "Utbildning" %><br />
+    <%= f.select(:education,[['Gymnasium', 'Gymnasium'], ['Högskola', 'Högskola'], ['Universitet', 'Universitet'], ['Annan', 'Annan']]) %>
+  </div>
+  <div class="field">
+    <%= f.label :info, "Kort om din utbildning" %><br />
+    <%= f.text_area :info %>
+  </div>
+  <br /><br /> 
+  <div class="field">
+    <%= f.label :cv, "Ladda upp ditt CV" %>
+    <%= f.file_field :cv %>
+  </div>
+  <a href="<%= @user.cv.url %>">Länk till CV</a>
+
+  <br /><br />
+   <div><%= f.label :current_password, "Nuvarande lösenord" %> <i>(vi behöver ditt lösenord innan ändringar kan göras)</i><br />
+    <%= f.password_field :current_password %></div>
+
+  <div><%= f.submit "Uppdatera profil" %></div>
+  <% end %>
+  <br /><hr>
+<h3>Avsluta mitt konto</h3>
+
+<p>Inte nöjd? <%= link_to "Avsluta kontot", registration_path(resource_name), :confirm => "Är du säker?", :method => :delete %>.</p>
+
+<%= link_to "Startsidan", :back %>

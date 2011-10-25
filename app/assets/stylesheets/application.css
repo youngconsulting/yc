@@ -1,0 +1,147 @@
+body {
+        background-color: #ececec;
+        margin: 0 auto;
+        padding: 35px 0;
+        font: normal 16px Arial;
+        color: #5b5b5b;
+        line-height: 1.3em;
+}
+
+A:link {color: #f27700;text-decoration: underline}
+A:visited {color: #f27700;text-decoration: none}
+A:active {color: #f27700;text-decoration: none}
+A:hover {color: #f27700;text-decoration: none}
+
+#container {
+        width: 790px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding: 15px;
+}
+
+.notice {
+  color: green;
+  font-weight: bold;
+}
+
+.alert {
+  color: red;
+  font-weight: bold;
+}
+
+#logo {
+        background: #f27700 url('gfx/yc-logo.png') no-repeat top center;
+        width: 790px;
+        height: 54px;
+}
+
+#menu {
+        background-color: #ececec;
+        height: 60px;
+        text-align: right;
+        margin-bottom: 25px;
+        margin-top: 15px;
+}
+
+#user {
+        background-color: #fff;
+        height: 35px;
+        margin-left: 10px;
+        margin-top: 5px;
+        text-align: right;
+}
+
+h1 {
+        font: bold 35px "Trebuchet MS", Arial;
+        color: #fff;
+        text-transform: uppercase
+}
+
+h2 {
+        color: #5b5b5b;
+        font: bold 25px Arial;
+        margin-bottom: 25px
+}
+
+h3 {
+        color: #5b5b5b;
+        font: bold 20px Arial;
+        margin: 15px 0 10px 0;
+        text-align: center;
+        text-transform: uppercase
+}
+
+#menu ul {
+        list-style: none;
+        padding: 0;
+}
+
+#menu ul li {
+        display: block;
+        float: left;
+}
+
+#menu ul li:hover {
+        background-color: #fff;
+}
+
+#menu ul li.active {
+        background-color: #f27700;
+}
+
+#menu ul li a {
+        display: block;
+        font: 15px Arial;
+        color: #5b5b5b;
+        height: 39px;
+        padding: 21px 15px 0 15px;
+        text-transform: uppercase;
+        text-decoration: none;
+}
+
+#menu ul li.active a {
+        color: #fff;
+}
+
+
+div.text {
+        padding: 0 25px;
+        margin-bottom: 50px;
+}
+
+div.boxes {
+        margin-top: 35px;
+        font-size: 13px;
+        line-height: normal;
+}
+
+div.box {
+        width: 210px;
+        margin: 0 18px;
+        float: left;
+        padding: 155px 20px 0 20px;
+}
+
+.form-text, .form-textarea {
+        padding: 5px;
+        border: 1px solid #d5d5d5;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        width: 300px;
+        display: block;
+}
+
+.form-textarea {
+        height: 150px;
+}
+
+.form-required {
+        color: #fdb11d;
+}
+
+.form-item {
+        margin-bottom: 15px;
+}
+
+
+

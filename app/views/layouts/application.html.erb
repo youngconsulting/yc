@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>
+    <% if user_signed_in? %>
+      YoungConsulting.se | Inloggad <%= current_user.fname.capitalize %>
+    <% else %>
+      YoungConsulting.se
+    <% end %>
+ </title>
+
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="container">
+  
+  <div id="logo">
+  </div>
+
+  <div id="user">
+    <% if user_signed_in? %>
+      Välkommen <%= current_user.fname.capitalize %> <%= current_user.lname.capitalize %>!<br />
+      <%= link_to "Redigera profil", edit_user_registration_path %> | <%= link_to "Logga ut", destroy_user_session_path, :method => :delete %>
+    <% else %>
+      <%= link_to "Logga in", new_user_session_path %> eller <%= link_to "registrera dig", new_user_registration_path %>
+    <% end %>
+  </div>
+
+  <div class="text">
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <%= yield %>
+  </div>
+
+</div>
+</body>
+</html>
