@@ -1,3 +1,4 @@
+# encoding: UTF-8
 ActiveAdmin.register User do
   index do
     column :id
