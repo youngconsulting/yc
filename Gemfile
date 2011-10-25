@@ -4,7 +4,7 @@ gem 'rails', '3.1.1'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
-gem 'sass-rails',   '~> 3.1.4'
+
 gem 'sqlite3'
 
 gem 'devise'
@@ -21,6 +21,7 @@ gem 'therubyracer'
 gem 'json'
 
 gem 'capistrano'
+gem 'sass-rails',   '~> 3.1.4'
 
 # Gems used only for assets and not required
 # in production environments by default.
