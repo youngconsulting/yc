@@ -57,4 +57,6 @@ Yc::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+
+  Encoding.default_internal = Encoding.find("UTF-8")
 end
