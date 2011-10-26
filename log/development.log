@@ -16252,3 +16252,58 @@ Served asset /application.js - 304 Not Modified (1ms)
 
 Started GET "/assets/gfx/yc-logo.png" for 127.0.0.1 at Tue Oct 25 14:55:02 +0200 2011
 Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 192.168.159.1 at 2011-10-25 16:04:00 +0200
+
+
+Started GET "/users/sign_up" for 192.168.159.1 at 2011-10-25 16:04:00 +0200
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/registrations/new.html.erb within layouts/application (160.1ms)
+Cache for Asset (application.js) is stale
+/usr/lib/ruby/gems/1.8/gems/jquery-rails-1.0.16/vendor/assets/javascripts/jquery.js isn't in paths: /home/dg/Projects/yc/app/assets/images, /home/dg/Projects/yc/app/assets/javascripts, /home/dg/Projects/yc/app/assets/stylesheets, /home/dg/Projects/yc/vendor/assets/stylesheets, /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/jquery-rails-1.0.16/vendor/assets/javascripts, /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.2/app/assets/images, /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.2/app/assets/javascripts, /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.2/app/assets/stylesheets
+Compiled application.js  (22ms)  (pid 6270)
+Compiled jquery.js  (23ms)  (pid 6270)
+Compiled jquery_ujs.js  (10ms)  (pid 6270)
+Cache for Asset (active_admin.js) is stale
+/usr/lib/ruby/gems/1.8/gems/activeadmin-0.3.2/app/assets/javascripts/active_admin/vendor.js isn't in paths: /home/dg/Projects/yc/app/assets/images, /home/dg/Projects/yc/app/assets/javascripts, /home/dg/Projects/yc/app/assets/stylesheets, /home/dg/Projects/yc/vendor/assets/stylesheets, /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/jquery-rails-1.0.16/vendor/assets/javascripts, /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.2/app/assets/images, /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.2/app/assets/javascripts, /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.2/app/assets/stylesheets
+Compiled active_admin.js  (2ms)  (pid 6270)
+Compiled active_admin/base.js  (53ms)  (pid 6270)
+Compiled active_admin/vendor.js  (1ms)  (pid 6270)
+Completed 200 OK in 616ms (Views: 614.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-10-25 16:04:01 +0200
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-10-25 16:04:01 +0200
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-10-25 16:04:01 +0200
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-10-25 16:04:02 +0200
+Served asset /active_admin/vendor.js - 200 OK (3ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-10-25 16:04:02 +0200
+Served asset /active_admin/base.js - 200 OK (4ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-10-25 16:04:02 +0200
+Served asset /active_admin.js - 200 OK (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-10-25 16:04:02 +0200
+Served asset /home.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-10-25 16:04:02 +0200
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-10-25 16:04:03 +0200
+Served asset /gfx/yc-logo.png - 200 OK (1ms)
