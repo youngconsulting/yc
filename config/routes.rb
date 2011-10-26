@@ -5,6 +5,6 @@ Yc::Application.routes.draw do
 
   devise_for :users
 
-root :to => redirect("/users/sign_up")
+root :to => "home#index"
 
 end
