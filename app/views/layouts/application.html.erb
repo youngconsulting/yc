@@ -24,7 +24,6 @@
 			<div id="menu">
 			<ul>
 				<li class="active"><a href="index.php">Startsidan</a></li>
-				<li><a href="omoss.php">Lediga jobb</a></li>
 			<% if user_signed_in? %>
 				<li><%= link_to "Min Profil", edit_user_registration_path %></li>		
 				<li><%= link_to "Logga ut", destroy_user_session_path, :method => :delete %></li>
