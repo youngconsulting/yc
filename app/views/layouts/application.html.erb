@@ -21,17 +21,22 @@
   <div id="logo">
   </div>
 
-  <div id="user">
-    <% if user_signed_in? %>
-      Välkommen <%= current_user.fname.capitalize %> <%= current_user.lname.capitalize %>!<br />
-      <%= link_to "Redigera profil", edit_user_registration_path %> | <%= link_to "Logga ut", destroy_user_session_path, :method => :delete %>
-    <% else %>
-      <%= link_to "Logga in", new_user_session_path %> eller <%= link_to "registrera dig", new_user_registration_path %>
-    <% end %>
-  </div>
+			<div id="menu">
+			<ul>
+				<li class="active"><a href="index.php">Startsidan</a></li>
+				<li><a href="omoss.php">Lediga jobb</a></li>
+			<% if user_signed_in? %>
+				<li><%= link_to "Min Profil", edit_user_registration_path %></li>		
+				<li><%= link_to "Logga ut", destroy_user_session_path, :method => :delete %></li>
+			<% else %>
+				<li><%= link_to "Logga in", new_user_session_path %></li>
+				<li><%= link_to "Registrera", new_user_registration_path %></li>
+			<% end %>	
+			</ul>
+		</div>
 
   <div class="text">
-    <p class="notice"><%= notice %></p>
+		<p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>
   </div>

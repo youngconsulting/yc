@@ -30,17 +30,15 @@ A:hover {color: #f27700;text-decoration: none}
 }
 
 #logo {
-        background: #f27700 url('gfx/yc-logo.png') no-repeat top center;
+        background: #f27700 url('gfx/yc-logo.png') no-repeat center;
         width: 790px;
-        height: 54px;
+        height: 90px;
 }
 
 #menu {
         background-color: #ececec;
         height: 60px;
-        text-align: right;
-        margin-bottom: 25px;
-        margin-top: 15px;
+				margin-bottom: 45px;
 }
 
 #user {
@@ -72,37 +70,36 @@ h3 {
 }
 
 #menu ul {
-        list-style: none;
-        padding: 0;
+	list-style: none;
+	padding: 0;
 }
 
 #menu ul li {
-        display: block;
-        float: left;
+	display: block;
+	float: left;
 }
 
 #menu ul li:hover {
-        background-color: #fff;
+	background-color: #fff;
 }
 
 #menu ul li.active {
-        background-color: #f27700;
+	background-color: #f27700;
 }
 
 #menu ul li a {
-        display: block;
-        font: 15px Arial;
-        color: #5b5b5b;
-        height: 39px;
-        padding: 21px 15px 0 15px;
-        text-transform: uppercase;
-        text-decoration: none;
+	display: block;
+	font: 15px Arial;
+	color: #5b5b5b;
+	height: 39px;
+	padding: 21px 15px 0 15px;
+	text-transform: uppercase;
+	text-decoration: none;
 }
 
 #menu ul li.active a {
-        color: #fff;
+	color: #fff;
 }
-
 
 div.text {
         padding: 0 25px;
