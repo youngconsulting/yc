@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,3 +44,51 @@
 </div>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>
+    <% if user_signed_in? %>
+      YoungConsulting.se | Inloggad <%= current_user.fname.capitalize %>
+    <% else %>
+      YoungConsulting.se
+    <% end %>
+ </title>
+
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="container">
+  
+  <div id="logo">
+  </div>
+
+		<div id="menu">
+			<ul>
+				<li class="active"><%= link_to "Startsidan", root_url %></a></li>
+				<li><%= link_to "Lediga jobb", jobs_path %></li>
+			<% if user_signed_in? %>
+				<li><%= link_to "Min Profil", edit_user_registration_path %></li>		
+				<li><%= link_to "Logga ut", destroy_user_session_path, :method => :delete %></li>
+			<% else %>
+				<li><%= link_to "Logga in", new_user_session_path %></li>
+				<li><%= link_to "Registrera", new_user_registration_path %></li>
+			<% end %>	
+			</ul>
+		</div>
+
+  <div class="text">
+		<p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <%= yield %>
+  </div>
+
+</div>
+</body>
+</html>
+>>>>>>> 8e62977e691004a6d926c144206f64c90ce62a0d

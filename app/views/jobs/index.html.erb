@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>Listing jobs</h1>
 
 <table>
@@ -25,3 +26,22 @@
 <br />
 
 <%= link_to 'New Job', new_job_path %>
+=======
+<h2>Lediga jobb</h2>
+<table width="700">
+	<tr align="left">
+		<th>Datum </th>
+		<th>Arbetsbeskrivning</th>
+		<th>Ort</th>
+	</tr>
+	<% @jobs.each do |job| %>
+	<tr>
+	<td>2011-10-31</td>
+	<td><%= job.name %></td>
+	<td>Stockholm</td>
+	</tr>
+<% end %>
+</table>
+
+<br />
+>>>>>>> 8e62977e691004a6d926c144206f64c90ce62a0d
