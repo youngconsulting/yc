@@ -1,4 +1,6 @@
-o: ActiveSupport::Cache::Entry	:@created_atf1320256166.2168546:@value{	I"length:EFi_ÁI"digest;F"%158246bc43e16b62a45968293062b050I"source;FI"_Á/*!
+o: ActiveSupport::Cache::Entry	:@created_atf1320256166.0278378:@value{I"
+class:EFI"BundledAsset;FI"id;F"%bd044177b53524c95465d84d2ac29c38I"logical_path;F"active_admin/vendor.jsI"pathname;F"j/home/dg/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.3.2/app/assets/javascripts/active_admin/vendor.jsI"content_type;FI"application/javascript;FI"
+mtime;FI"2011-11-02T18:43:55+01:00;FI"	body;FI"•À/*!
  * jQuery JavaScript Library v1.4.2
  * http://jquery.com/
  *
@@ -381,16 +383,6 @@ c=this._daylightSavingAdjust(new Date(c,e+(b<0?b:f[0]*f[1]),1));b<0&&c.setDate(t
 function(a){if(!d.datepicker.initialized){d(document).mousedown(d.datepicker._checkExternalClick).find("body").append(d.datepicker.dpDiv);d.datepicker.initialized=true}var b=Array.prototype.slice.call(arguments,1);if(typeof a=="string"&&(a=="isDisabled"||a=="getDate"||a=="widget"))return d.datepicker["_"+a+"Datepicker"].apply(d.datepicker,[this[0]].concat(b));if(a=="option"&&arguments.length==2&&typeof arguments[1]=="string")return d.datepicker["_"+a+"Datepicker"].apply(d.datepicker,[this[0]].concat(b));
 return this.each(function(){typeof a=="string"?d.datepicker["_"+a+"Datepicker"].apply(d.datepicker,[this].concat(b)):d.datepicker._attachDatepicker(this,a)})};d.datepicker=new J;d.datepicker.initialized=false;d.datepicker.uuid=(new Date).getTime();d.datepicker.version="1.8.2";window["DP_jQuery_"+y]=d})(jQuery);
 ;
-
-/* Active Admin JS */
-
-
-$(function(){
-  $(".datepicker").datepicker({dateFormat: 'yy-mm-dd'});
-
-  $(".clear_filters_btn").click(function(){
-    window.location.search = "";
-    return false;
-  });
-});
-;FI"_version;F"%6cd10c65f112c1a6a348fe1544f46546:@expires_in0:@compressedF
+;FI"asset_paths;F["j/home/dg/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.3.2/app/assets/javascripts/active_admin/vendor.jsI"dependency_paths;F[{I"	path;F"j/home/dg/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.3.2/app/assets/javascripts/active_admin/vendor.jsI"
+mtime;FIu:	TimeQè€ó=p¯
+:@_zoneI"CET;T:nano_numi:nano_deni:submicro"w@:offsetiI"hexdigest;F"%4d63462f82e1080117e76a26dc2037f3I"_version;F"%46dde6621c301f4928e3b34efee9e3b5:@expires_in0:@compressedF

@@ -11332,3 +11332,313 @@ Served asset /jobs.js - 304 Not Modified (0ms)
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-01 18:51:50 +0100
 Served asset /application.js - 304 Not Modified (1ms)
 >>>>>>> 8e62977e691004a6d926c144206f64c90ce62a0d
+
+
+Started GET "/" for 192.168.159.1 at 2011-11-02 18:49:25 +0100
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (5.9ms)
+Compiled application.css  (0ms)  (pid 1931)
+Cache for Asset (application.js) is stale
+/home/niklas/.rvm/gems/ruby-1.9.2-p290/gems/jquery-rails-1.0.16/vendor/assets/javascripts/jquery.js isn't in paths: /home/dg/Projects/yc/app/assets/images, /home/dg/Projects/yc/app/assets/javascripts, /home/dg/Projects/yc/app/assets/stylesheets, /home/dg/Projects/yc/vendor/assets/stylesheets, /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/jquery-rails-1.0.16/vendor/assets/javascripts, /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.3.2/app/assets/images, /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.3.2/app/assets/javascripts, /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.3.2/app/assets/stylesheets
+Compiled application.js  (3ms)  (pid 1931)
+Compiled jquery.js  (86ms)  (pid 1931)
+Compiled jquery_ujs.js  (7ms)  (pid 1931)
+Cache for Asset (active_admin.js) is stale
+/home/niklas/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.2/app/assets/javascripts/active_admin/vendor.js isn't in paths: /home/dg/Projects/yc/app/assets/images, /home/dg/Projects/yc/app/assets/javascripts, /home/dg/Projects/yc/app/assets/stylesheets, /home/dg/Projects/yc/vendor/assets/stylesheets, /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/jquery-rails-1.0.16/vendor/assets/javascripts, /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.3.2/app/assets/images, /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.3.2/app/assets/javascripts, /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.3.2/app/assets/stylesheets
+Compiled active_admin.js  (2ms)  (pid 1931)
+Compiled active_admin/base.js  (2ms)  (pid 1931)
+Compiled active_admin/vendor.js  (1ms)  (pid 1931)
+Compiled jobs.js  (113ms)  (pid 1931)
+Completed 200 OK in 450ms (Views: 448.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-02 18:49:26 +0100
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-02 18:49:26 +0100
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-02 18:49:26 +0100
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-02 18:49:27 +0100
+Served asset /active_admin/vendor.js - 200 OK (55ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-02 18:49:27 +0100
+Served asset /active_admin/base.js - 200 OK (2ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-02 18:49:27 +0100
+Served asset /active_admin.js - 200 OK (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-02 18:49:27 +0100
+Served asset /home.js - 200 OK (2ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-02 18:49:28 +0100
+Served asset /jobs.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-02 18:49:28 +0100
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-02 18:49:28 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-02 18:49:29 +0100
+Served asset /gfx/yc-logo.png - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-02 18:49:29 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-02 18:49:29 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-02 18:49:30 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-02 18:49:30 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-02 18:49:30 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-02 18:49:30 +0100
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-02 18:49:31 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 192.168.159.1 at 2011-11-02 18:50:57 +0100
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-02 18:50:58 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-02 18:50:58 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-02 18:50:58 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-02 18:50:59 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-02 18:50:59 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-02 18:50:59 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-02 18:50:59 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:00 +0100
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:00 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-02 18:51:01 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 18:51:07 +0100
+  Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" [0m
+Rendered jobs/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 100ms (Views: 98.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-02 18:51:07 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:08 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:08 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:08 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:09 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:09 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:09 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:09 +0100
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:10 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-02 18:51:10 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-02 18:51:10 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:11 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:11 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:11 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:12 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:12 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:12 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:13 +0100
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:13 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-02 18:51:13 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 18:51:40 +0100
+  Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs" 
+Rendered jobs/index.html.erb within layouts/application (95.5ms)
+Completed 200 OK in 115ms (Views: 114.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-02 18:51:40 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:40 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:41 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:41 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:41 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:41 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:42 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:42 +0100
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:42 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-02 18:51:43 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-02 18:51:43 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:43 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:44 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:44 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:45 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:45 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:45 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:46 +0100
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-02 18:51:46 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-02 18:51:46 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
