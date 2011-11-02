@@ -11,7 +11,9 @@
 	  <td><%= job.updated_at.strftime("%d/%m/%Y") %></td>
 	  <td><%= job.name %></td>
 	  <td>Stockholm</td>
-    <td><%= link_to "Apply job", "#{job.id}" %></td>
+    <td>
+      <%= link_to "Apply job", add_job_path(job.id) %>
+    </td>
 	</tr>
 <% end %>
 </table>

@@ -15800,3 +15800,749 @@ Served asset /application.js - 304 Not Modified (0ms)
 
 Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-02 22:11:26 +0100
 Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 22:20:51 +0100
+  Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" [0m
+Rendered jobs/index.html.erb within layouts/application (256.3ms)
+Completed 500 Internal Server Error in 314ms
+
+ActionView::Template::Error (undefined local variable or method `job_id' for #<#<Class:0x00000003c73dc0>:0x000000035ba8a8>):
+    11: 	  <td><%= job.updated_at.strftime("%d/%m/%Y") %></td>
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td><%= link_to "Apply job", edit_user_registration_path(:job_id => "#{job_id}") %> update method user controller</td>
+    15: 	</tr>
+    16: <% end %>
+    17: </table>
+  app/views/jobs/index.html.erb:14:in `block in _app_views_jobs_index_html_erb__3115523898239233727_30624080'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb__3115523898239233727_30624080'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.1ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 22:20:52 +0100
+  Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" 
+Rendered jobs/index.html.erb within layouts/application (151.7ms)
+Completed 500 Internal Server Error in 160ms
+
+ActionView::Template::Error (undefined local variable or method `job_id' for #<#<Class:0x00000004f87c90>:0x00000004bd0020>):
+    11: 	  <td><%= job.updated_at.strftime("%d/%m/%Y") %></td>
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td><%= link_to "Apply job", edit_user_registration_path(:job_id => "#{job_id}") %> update method user controller</td>
+    15: 	</tr>
+    16: <% end %>
+    17: </table>
+  app/views/jobs/index.html.erb:14:in `block in _app_views_jobs_index_html_erb__3115523898239233727_30624080'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb__3115523898239233727_30624080'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.4ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 22:20:53 +0100
+  Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" [0m
+Rendered jobs/index.html.erb within layouts/application (156.8ms)
+Completed 500 Internal Server Error in 165ms
+
+ActionView::Template::Error (undefined local variable or method `job_id' for #<#<Class:0x0000000438c5f8>:0x00000004a7ee60>):
+    11: 	  <td><%= job.updated_at.strftime("%d/%m/%Y") %></td>
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td><%= link_to "Apply job", edit_user_registration_path(:job_id => "#{job_id}") %> update method user controller</td>
+    15: 	</tr>
+    16: <% end %>
+    17: </table>
+  app/views/jobs/index.html.erb:14:in `block in _app_views_jobs_index_html_erb__3115523898239233727_30624080'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb__3115523898239233727_30624080'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.4ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 22:20:54 +0100
+  Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs" 
+Rendered jobs/index.html.erb within layouts/application (146.9ms)
+Completed 500 Internal Server Error in 154ms
+
+ActionView::Template::Error (undefined local variable or method `job_id' for #<#<Class:0x000000048e2778>:0x00000004edd4e8>):
+    11: 	  <td><%= job.updated_at.strftime("%d/%m/%Y") %></td>
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td><%= link_to "Apply job", edit_user_registration_path(:job_id => "#{job_id}") %> update method user controller</td>
+    15: 	</tr>
+    16: <% end %>
+    17: </table>
+  app/views/jobs/index.html.erb:14:in `block in _app_views_jobs_index_html_erb__3115523898239233727_30624080'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb__3115523898239233727_30624080'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.1ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 22:20:54 +0100
+  Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" [0m
+Rendered jobs/index.html.erb within layouts/application (148.9ms)
+Completed 500 Internal Server Error in 157ms
+
+ActionView::Template::Error (undefined local variable or method `job_id' for #<#<Class:0x00000004fb6d38>:0x00000005205d00>):
+    11: 	  <td><%= job.updated_at.strftime("%d/%m/%Y") %></td>
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td><%= link_to "Apply job", edit_user_registration_path(:job_id => "#{job_id}") %> update method user controller</td>
+    15: 	</tr>
+    16: <% end %>
+    17: </table>
+  app/views/jobs/index.html.erb:14:in `block in _app_views_jobs_index_html_erb__3115523898239233727_30624080'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb__3115523898239233727_30624080'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.9ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 22:21:00 +0100
+  Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs" 
+Rendered jobs/index.html.erb within layouts/application (110.0ms)
+Completed 500 Internal Server Error in 117ms
+
+ActionView::Template::Error (undefined local variable or method `job_id' for #<#<Class:0x0000000309a6c0>:0x00000003164420>):
+    11: 	  <td><%= job.updated_at.strftime("%d/%m/%Y") %></td>
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td><%= link_to "Apply job", edit_user_registration(:job_id => "#{job_id}") %> update method user controller</td>
+    15: 	</tr>
+    16: <% end %>
+    17: </table>
+  app/views/jobs/index.html.erb:14:in `block in _app_views_jobs_index_html_erb__3115523898239233727_30971920'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb__3115523898239233727_30971920'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.3ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 22:21:01 +0100
+  Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" [0m
+Rendered jobs/index.html.erb within layouts/application (113.8ms)
+Completed 500 Internal Server Error in 122ms
+
+ActionView::Template::Error (undefined local variable or method `job_id' for #<#<Class:0x00000003a62f68>:0x0000000395c4c0>):
+    11: 	  <td><%= job.updated_at.strftime("%d/%m/%Y") %></td>
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td><%= link_to "Apply job", edit_user_registration(:job_id => "#{job_id}") %> update method user controller</td>
+    15: 	</tr>
+    16: <% end %>
+    17: </table>
+  app/views/jobs/index.html.erb:14:in `block in _app_views_jobs_index_html_erb__3115523898239233727_30971920'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb__3115523898239233727_30971920'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.4ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 22:21:02 +0100
+  Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs" 
+Rendered jobs/index.html.erb within layouts/application (110.9ms)
+Completed 500 Internal Server Error in 118ms
+
+ActionView::Template::Error (undefined local variable or method `job_id' for #<#<Class:0x00000003935438>:0x000000038395e8>):
+    11: 	  <td><%= job.updated_at.strftime("%d/%m/%Y") %></td>
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td><%= link_to "Apply job", edit_user_registration(:job_id => "#{job_id}") %> update method user controller</td>
+    15: 	</tr>
+    16: <% end %>
+    17: </table>
+  app/views/jobs/index.html.erb:14:in `block in _app_views_jobs_index_html_erb__3115523898239233727_30971920'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb__3115523898239233727_30971920'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.5ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 22:55:23 +0100
+  Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.4ms)[0m  [1mSELECT "jobs".* FROM "jobs" [0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered jobs/index.html.erb within layouts/application (185.2ms)
+Completed 500 Internal Server Error in 244ms
+
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"jobs", :user_id=>1}):
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td>
+    15:       <%= link_to "Apply job", edit_job_path(:user_id => current_user.id) %>
+    16:       <%# job.update_attributes() %>>
+    17:     </td>
+    18: 	</tr>
+  app/views/jobs/index.html.erb:15:in `block in _app_views_jobs_index_html_erb___240601511089935542_20407640'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb___240601511089935542_20407640'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 22:56:01 +0100
+  Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered jobs/index.html.erb within layouts/application (207.6ms)
+Completed 500 Internal Server Error in 214ms
+
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"jobs", :user_id=>"1"}):
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td>
+    15:       <%= link_to "Apply job", edit_job_path(:user_id => "#{current_user.id}") %>
+    16:       <%# job.update_attributes() %>>
+    17:     </td>
+    18: 	</tr>
+  app/views/jobs/index.html.erb:15:in `block in _app_views_jobs_index_html_erb___240601511089935542_31332500'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb___240601511089935542_31332500'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 22:56:03 +0100
+  Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" [0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered jobs/index.html.erb within layouts/application (118.1ms)
+Completed 500 Internal Server Error in 127ms
+
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"jobs", :user_id=>"1"}):
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td>
+    15:       <%= link_to "Apply job", edit_job_path(:user_id => "#{current_user.id}") %>
+    16:       <%# job.update_attributes() %>>
+    17:     </td>
+    18: 	</tr>
+  app/views/jobs/index.html.erb:15:in `block in _app_views_jobs_index_html_erb___240601511089935542_31332500'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb___240601511089935542_31332500'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 192.168.159.1 at 2011-11-02 22:57:49 +0100
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 199ms (Views: 146.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-02 22:57:49 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-02 22:57:49 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-02 22:57:49 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-02 22:57:49 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-02 22:57:49 +0100
+Served asset /active_admin/base.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-02 22:57:49 +0100
+Served asset /active_admin.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-02 22:57:49 +0100
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-02 22:57:49 +0100
+Served asset /jobs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-02 22:57:49 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-02 22:57:49 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 22:57:53 +0100
+  Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs" 
+Rendered jobs/index.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 71ms
+
+ActionView::Template::Error (No route matches {:controller=>"jobs", :action=>"add_job_to_users"}):
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td>
+    15:       <%= link_to "Apply job", :controller => "jobs", :action => "add_job_to_users" %>
+    16:     </td>
+    17: 	</tr>
+    18: <% end %>
+  app/views/jobs/index.html.erb:15:in `block in _app_views_jobs_index_html_erb___240601511089935542_33850400'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb___240601511089935542_33850400'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 22:58:10 +0100
+  Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" [0m
+Rendered jobs/index.html.erb within layouts/application (16.7ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (No route matches {:controller=>"jobs", :action=>"add_job_to_user"}):
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td>
+    15:       <%= link_to "Apply job", :controller => "jobs", :action => "add_job_to_user" %>
+    16:     </td>
+    17: 	</tr>
+    18: <% end %>
+  app/views/jobs/index.html.erb:15:in `block in _app_views_jobs_index_html_erb___240601511089935542_22383100'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb___240601511089935542_22383100'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 22:58:11 +0100
+  Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs" 
+Rendered jobs/index.html.erb within layouts/application (55.1ms)
+Completed 500 Internal Server Error in 62ms
+
+ActionView::Template::Error (No route matches {:controller=>"jobs", :action=>"add_job_to_user"}):
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td>
+    15:       <%= link_to "Apply job", :controller => "jobs", :action => "add_job_to_user" %>
+    16:     </td>
+    17: 	</tr>
+    18: <% end %>
+  app/views/jobs/index.html.erb:15:in `block in _app_views_jobs_index_html_erb___240601511089935542_22383100'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb___240601511089935542_22383100'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 22:58:11 +0100
+  Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" [0m
+Rendered jobs/index.html.erb within layouts/application (10.7ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (No route matches {:controller=>"jobs", :action=>"add_job_to_user"}):
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td>
+    15:       <%= link_to "Apply job", :controller => "jobs", :action => "add_job_to_user" %>
+    16:     </td>
+    17: 	</tr>
+    18: <% end %>
+  app/views/jobs/index.html.erb:15:in `block in _app_views_jobs_index_html_erb___240601511089935542_22383100'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb___240601511089935542_22383100'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 22:58:11 +0100
+  Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs" 
+Rendered jobs/index.html.erb within layouts/application (9.9ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (No route matches {:controller=>"jobs", :action=>"add_job_to_user"}):
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td>
+    15:       <%= link_to "Apply job", :controller => "jobs", :action => "add_job_to_user" %>
+    16:     </td>
+    17: 	</tr>
+    18: <% end %>
+  app/views/jobs/index.html.erb:15:in `block in _app_views_jobs_index_html_erb___240601511089935542_22383100'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb___240601511089935542_22383100'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (46.1ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 22:58:11 +0100
+  Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" [0m
+Rendered jobs/index.html.erb within layouts/application (10.2ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (No route matches {:controller=>"jobs", :action=>"add_job_to_user"}):
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td>
+    15:       <%= link_to "Apply job", :controller => "jobs", :action => "add_job_to_user" %>
+    16:     </td>
+    17: 	</tr>
+    18: <% end %>
+  app/views/jobs/index.html.erb:15:in `block in _app_views_jobs_index_html_erb___240601511089935542_22383100'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb___240601511089935542_22383100'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 22:58:38 +0100
+  Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs" 
+Rendered jobs/index.html.erb within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (No route matches {:controller=>"jobs", :action=>"add_job_to_user", :id=>1}):
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td>
+    15:       <%= link_to "Apply job", :controller => "jobs", :action => "add_job_to_user", :id => job.id %>
+    16:     </td>
+    17: 	</tr>
+    18: <% end %>
+  app/views/jobs/index.html.erb:15:in `block in _app_views_jobs_index_html_erb___240601511089935542_33790800'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb___240601511089935542_33790800'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 22:58:38 +0100
+  Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" [0m
+Rendered jobs/index.html.erb within layouts/application (9.7ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (No route matches {:controller=>"jobs", :action=>"add_job_to_user", :id=>1}):
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td>
+    15:       <%= link_to "Apply job", :controller => "jobs", :action => "add_job_to_user", :id => job.id %>
+    16:     </td>
+    17: 	</tr>
+    18: <% end %>
+  app/views/jobs/index.html.erb:15:in `block in _app_views_jobs_index_html_erb___240601511089935542_33790800'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb___240601511089935542_33790800'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 23:00:03 +0100
+  Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs" 
+Rendered jobs/index.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (No route matches {:controller=>"jobs", :action=>"add_job_to_user"}):
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td>
+    15:       <%= link_to "Apply job", { :controller => "jobs", :action => "add_job_to_user" } %>
+    16:     </td>
+    17: 	</tr>
+    18: <% end %>
+  app/views/jobs/index.html.erb:15:in `block in _app_views_jobs_index_html_erb___240601511089935542_30550060'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb___240601511089935542_30550060'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 23:00:03 +0100
+  Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" [0m
+Rendered jobs/index.html.erb within layouts/application (9.7ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (No route matches {:controller=>"jobs", :action=>"add_job_to_user"}):
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td>
+    15:       <%= link_to "Apply job", { :controller => "jobs", :action => "add_job_to_user" } %>
+    16:     </td>
+    17: 	</tr>
+    18: <% end %>
+  app/views/jobs/index.html.erb:15:in `block in _app_views_jobs_index_html_erb___240601511089935542_30550060'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb___240601511089935542_30550060'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 23:00:04 +0100
+  Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs" 
+Rendered jobs/index.html.erb within layouts/application (9.4ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (No route matches {:controller=>"jobs", :action=>"add_job_to_user"}):
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td>
+    15:       <%= link_to "Apply job", { :controller => "jobs", :action => "add_job_to_user" } %>
+    16:     </td>
+    17: 	</tr>
+    18: <% end %>
+  app/views/jobs/index.html.erb:15:in `block in _app_views_jobs_index_html_erb___240601511089935542_30550060'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb___240601511089935542_30550060'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 23:00:04 +0100
+  Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" [0m
+Rendered jobs/index.html.erb within layouts/application (10.7ms)
+Completed 500 Internal Server Error in 69ms
+
+ActionView::Template::Error (No route matches {:controller=>"jobs", :action=>"add_job_to_user"}):
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td>
+    15:       <%= link_to "Apply job", { :controller => "jobs", :action => "add_job_to_user" } %>
+    16:     </td>
+    17: 	</tr>
+    18: <% end %>
+  app/views/jobs/index.html.erb:15:in `block in _app_views_jobs_index_html_erb___240601511089935542_30550060'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb___240601511089935542_30550060'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 23:00:04 +0100
+  Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs" 
+Rendered jobs/index.html.erb within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (No route matches {:controller=>"jobs", :action=>"add_job_to_user"}):
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td>
+    15:       <%= link_to "Apply job", { :controller => "jobs", :action => "add_job_to_user" } %>
+    16:     </td>
+    17: 	</tr>
+    18: <% end %>
+  app/views/jobs/index.html.erb:15:in `block in _app_views_jobs_index_html_erb___240601511089935542_30550060'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb___240601511089935542_30550060'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 23:00:04 +0100
+  Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" [0m
+Rendered jobs/index.html.erb within layouts/application (57.2ms)
+Completed 500 Internal Server Error in 67ms
+
+ActionView::Template::Error (No route matches {:controller=>"jobs", :action=>"add_job_to_user"}):
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td>
+    15:       <%= link_to "Apply job", { :controller => "jobs", :action => "add_job_to_user" } %>
+    16:     </td>
+    17: 	</tr>
+    18: <% end %>
+  app/views/jobs/index.html.erb:15:in `block in _app_views_jobs_index_html_erb___240601511089935542_30550060'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb___240601511089935542_30550060'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 23:04:59 +0100
+  Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs" [0m
+Rendered jobs/index.html.erb within layouts/application (103.7ms)
+Completed 500 Internal Server Error in 163ms
+
+ActionView::Template::Error (No route matches {:controller=>"jobs", :action=>"add_job_to_user", :method=>:post}):
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td>
+    15:       <%= link_to "Apply job", { :controller => "jobs", :action => "add_job_to_user", :method => :post } %>
+    16:     </td>
+    17: 	</tr>
+    18: <% end %>
+  app/views/jobs/index.html.erb:15:in `block in _app_views_jobs_index_html_erb__3752718173382520501_27667480'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb__3752718173382520501_27667480'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 23:15:34 +0100
+  Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" [0m
+Rendered jobs/index.html.erb within layouts/application (220.2ms)
+Completed 500 Internal Server Error in 320ms
+
+ActionView::Template::Error (undefined method `add_job_jobs_path' for #<#<Class:0x000000021e0300>:0x00000002426588>):
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td>
+    15:       <%= link_to "Apply job", add_job_jobs_path(job.id) %>
+    16:     </td>
+    17: 	</tr>
+    18: <% end %>
+  app/views/jobs/index.html.erb:15:in `block in _app_views_jobs_index_html_erb___3963064110688361727_19458560'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb___3963064110688361727_19458560'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.8ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 23:15:44 +0100
+  Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs" 
+Rendered jobs/index.html.erb within layouts/application (155.9ms)
+Completed 500 Internal Server Error in 164ms
+
+ActionView::Template::Error (undefined method `add_job' for #<#<Class:0x00000003ab58a8>:0x00000003e31888>):
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td>
+    15:       <%= link_to "Apply job", add_job(job.id) %>
+    16:     </td>
+    17: 	</tr>
+    18: <% end %>
+  app/views/jobs/index.html.erb:15:in `block in _app_views_jobs_index_html_erb___3963064110688361727_32604560'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb___3963064110688361727_32604560'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.7ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 23:16:02 +0100
+  Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" [0m
+Rendered jobs/index.html.erb within layouts/application (10.5ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 230ms (Views: 227.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-02 23:16:02 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-02 23:16:02 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-02 23:16:02 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-02 23:16:02 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-02 23:16:02 +0100
+Served asset /active_admin/base.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-02 23:16:02 +0100
+Served asset /active_admin.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-02 23:16:02 +0100
+Served asset /home.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-02 23:16:02 +0100
+Served asset /jobs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-02 23:16:02 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-02 23:16:02 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 23:16:22 +0100
+  Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" [0m
+Rendered jobs/index.html.erb within layouts/application (9.7ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (No route matches {:action=>"add_job_to_user", :controller=>"jobs", :format=>1}):
+    12: 	  <td><%= job.name %></td>
+    13: 	  <td>Stockholm</td>
+    14:     <td>
+    15:       <%= link_to "Apply job", add_job_path(job.id) %>
+    16:     </td>
+    17: 	</tr>
+    18: <% end %>
+  app/views/jobs/index.html.erb:15:in `block in _app_views_jobs_index_html_erb___3963064110688361727_19503180'
+  app/views/jobs/index.html.erb:9:in `_app_views_jobs_index_html_erb___3963064110688361727_19503180'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-02 23:16:47 +0100
+  Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" 
+Rendered jobs/index.html.erb within layouts/application (10.1ms)
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 236ms (Views: 178.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-02 23:16:47 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-02 23:16:47 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-02 23:16:47 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-02 23:16:47 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-02 23:16:47 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-02 23:16:47 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-02 23:16:47 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-02 23:16:47 +0100
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-02 23:16:47 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-02 23:16:47 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
