@@ -1,0 +1,20 @@
+o: ActiveSupport::Cache::Entry	:@created_atf1320256573.428089:@value{I"
+class:EFI"BundledAsset;FI"id;F"%57dec17fe39c43f6b8d1bccdcea66a24I"logical_path;F"active_admin/base.jsI"pathname;F"h/home/dg/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.3.3/app/assets/javascripts/active_admin/base.jsI"content_type;FI"application/javascript;FI"
+mtime;FI"2011-11-02T18:54:06+01:00;FI"	body;FI" 
+/* Active Admin JS */
+
+
+$(function(){
+  $(".datepicker").datepicker({dateFormat: 'yy-mm-dd'});
+
+  $(".clear_filters_btn").click(function(){
+    window.location.search = "";
+    return false;
+  });
+});
+;FI"asset_paths;F["j/home/dg/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.3.3/app/assets/javascripts/active_admin/vendor.js"h/home/dg/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.3.3/app/assets/javascripts/active_admin/base.jsI"dependency_paths;F[{I"	path;F"h/home/dg/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.3.3/app/assets/javascripts/active_admin/base.jsI"
+mtime;FIu:	TimeQËÄãhÿ
+:@_zoneI"CET;T:nano_numiπ:nano_deni:submicro"D:offsetiI"hexdigest;F"%82984936d95e0bb60b12379f5f2504d1{I"	path;F"j/home/dg/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.3.3/app/assets/javascripts/active_admin/vendor.jsI"
+mtime;FIu;	QËÄãhÿ
+;
+I"CET;T;iπ;i;"D;iI"hexdigest;F"%4d63462f82e1080117e76a26dc2037f3I"_version;F"%46dde6621c301f4928e3b34efee9e3b5:@expires_in0:@compressedF

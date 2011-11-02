@@ -1,42 +1,17 @@
-<h1>Listing jobs</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Title</th>
-    <th>Content</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @jobs.each do |job| %>
-  <tr>
-    <td><%= job.name %></td>
-    <td><%= job.title %></td>
-    <td><%= job.content %></td>
-    <td><%= link_to 'Show', job %></td>
-    <td><%= link_to 'Edit', edit_job_path(job) %></td>
-    <td><%= link_to 'Destroy', job, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Job', new_job_path %>
 <h2>Lediga jobb</h2>
 <table width="700">
 	<tr align="left">
 		<th>Datum </th>
 		<th>Arbetsbeskrivning</th>
 		<th>Ort</th>
+    <th></th>
 	</tr>
 	<% @jobs.each do |job| %>
 	<tr>
-	<td>2011-10-31</td>
-	<td><%= job.name %></td>
-	<td>Stockholm</td>
+	  <td><%= job.updated_at.strftime("%d/%m/%Y") %></td>
+	  <td><%= job.name %></td>
+	  <td>Stockholm</td>
+    <td><%= link_to "Apply job", "#{job.id}" %></td>
 	</tr>
 <% end %>
 </table>

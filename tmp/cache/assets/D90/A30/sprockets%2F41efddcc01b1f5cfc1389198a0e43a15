@@ -1,0 +1,3 @@
+o: ActiveSupport::Cache::Entry	:@created_atf1320266015.073174:@value{I"
+class:EFI"StaticAsset;FI"id;F"%8f5bb481bf10e062b9c4684fbfddf9aeI"logical_path;FI"active_admin/orderable.png;TI"pathname;F"i/home/dg/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.3.3/app/assets/images/active_admin/orderable.pngI"content_type;FI"image/png;FI"
+mtime;FI"2011-11-02T18:54:06+01:00;FI"length;FI"220;FI"digest;F"%133c459e13623657f81cb24b674d3ffbI"_version;F"%46dde6621c301f4928e3b34efee9e3b5:@expires_in0:@compressedF
