@@ -7,17 +7,21 @@
     <th></th>
 	</tr>
 	<% @jobs.each do |job| %>
-	<tr>
-	  <td><%= job.updated_at.strftime("%d/%m/%Y") %></td>
-	  <td><%= job.name %></td>
-	  <td>Stockholm</td>
-    <td>
-      <% if current_user %>
-        <%= link_to "Apply job", add_job_path(job.id), :method => :put %>
-      <% end %>
-    </td>
-	</tr>
-<% end %>
+    <tr>
+      <td><%= job.updated_at.strftime("%d/%m/%Y") %></td>
+      <td><%= job.name %></td>
+      <td>Stockholm</td>
+      <td>
+        <% if current_user %>
+          <% if job.users.exists?(current_user) %>
+            Already applied
+          <% else %>
+            <%= link_to("Apply job", add_job_path(job.id), :method => :put) %>
+          <% end %>
+        <% end %>
+      </td>
+    </tr>
+  <% end %>
 </table>
 
 <br />
