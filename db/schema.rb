@@ -46,6 +46,13 @@ ActiveRecord::Schema.define(:version => 20111102205359) do
   add_index "admin_users", ["email"], :name => "index_admin_users_on_email", :unique => true
   add_index "admin_users", ["reset_password_token"], :name => "index_admin_users_on_reset_password_token", :unique => true
 
+  create_table "applications", :force => true do |t|
+    t.integer  "job_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "jobs", :force => true do |t|
     t.string   "name"
     t.string   "title"
@@ -53,13 +60,6 @@ ActiveRecord::Schema.define(:version => 20111102205359) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
-  end
-
-  create_table "jobs_users", :id => false, :force => true do |t|
-    t.integer  "job_id"
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   create_table "users", :force => true do |t|

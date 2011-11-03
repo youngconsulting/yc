@@ -1,6 +1,7 @@
 # encoding: UTF-8
 class User < ActiveRecord::Base
-  has_many :jobs, :through => :jobs_users
+  has_many :applications
+  has_many :jobs, :through => :applications
   
   devise :database_authenticatable, :registerable, :recoverable, :trackable, :validatable
 

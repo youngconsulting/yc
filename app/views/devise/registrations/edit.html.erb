@@ -1,6 +1,13 @@
 <h2>Redigera profil</h2>
 
-Jobs:
+  Jobs du har ansøgt:
+  <br />
+  <br />
+  <% @current_user.jobs.each do |job| %>
+    <%= link_to job.name, job %>
+    <br />
+  <% end %>
+
 
 <br />
 <br />

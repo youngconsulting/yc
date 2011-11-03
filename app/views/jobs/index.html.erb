@@ -12,7 +12,9 @@
 	  <td><%= job.name %></td>
 	  <td>Stockholm</td>
     <td>
-      <%= link_to "Apply job", add_job_path(job.id) %>
+      <% if current_user %>
+        <%= link_to "Apply job", add_job_path(job.id), :method => :put %>
+      <% end %>
     </td>
 	</tr>
 <% end %>
