@@ -28612,3 +28612,577 @@ Served asset /application.js - 304 Not Modified (1ms)
 
 Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-03 13:32:59 +0100
 Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/jobs/1" for 192.168.159.1 at 2011-11-03 13:45:08 +0100
+  Processing by JobsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered jobs/show.html.erb within layouts/application (358.7ms)
+Completed 500 Internal Server Error in 370ms
+
+ActionView::Template::Error (undefined local variable or method `job' for #<#<Class:0x00000005713928>:0x000000057201a0>):
+    12: 
+    13: <br /><br />
+    14: <% if current_user %>
+    15:   <% if job.users.exists?(current_user) %>
+    16:     <span style="color:green;">Du har sökt jobbet</span>
+    17:   <% else %>
+    18:     <%= link_to("Sök jobbet", add_job_path(job.id), :method => :put) %>
+  app/views/jobs/show.html.erb:15:in `_app_views_jobs_show_html_erb___1796968330091850886_45691000'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.1ms)
+
+
+Started GET "/jobs/1" for 192.168.159.1 at 2011-11-03 13:45:26 +0100
+  Processing by JobsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 1 AND "users"."id" = 1 LIMIT 1[0m
+Rendered jobs/show.html.erb within layouts/application (217.3ms)
+Completed 200 OK in 245ms (Views: 240.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-03 13:45:26 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:26 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:26 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:26 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:26 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:26 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:26 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:26 +0100
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:26 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-03 13:45:26 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/jobs/1" for 192.168.159.1 at 2011-11-03 13:45:34 +0100
+  Processing by JobsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mJob Load (0.7ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 1 AND "users"."id" = 1 LIMIT 1
+Rendered jobs/show.html.erb within layouts/application (250.0ms)
+Completed 200 OK in 295ms (Views: 279.6ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-03 13:45:35 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:35 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:35 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:35 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:35 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:35 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:35 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:35 +0100
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:35 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-03 13:45:35 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-03 13:45:39 +0100
+  Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.4ms)[0m  [1mSELECT "jobs".* FROM "jobs" [0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 1 AND "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 2 AND "users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 3 AND "users"."id" = 1 LIMIT 1[0m
+Rendered jobs/index.html.erb within layouts/application (163.2ms)
+Completed 200 OK in 179ms (Views: 175.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-03 13:45:39 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:39 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:39 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:39 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:39 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:39 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:39 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:39 +0100
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:39 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-03 13:45:39 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 192.168.159.1 at 2011-11-03 13:45:42 +0100
+  Processing by Admin::DashboardController#index as HTML
+  [1m[35mAdminUser Load (0.1ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.3.3/app/views/active_admin/dashboard/index.html.arb (7.2ms)
+Completed 200 OK in 102ms (Views: 11.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.159.1 at 2011-11-03 13:45:43 +0100
+Served asset /active_admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.159.1 at 2011-11-03 13:45:43 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/jobs" for 192.168.159.1 at 2011-11-03 13:45:44 +0100
+  Processing by Admin::JobsController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "jobs" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "jobs" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "jobs" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "jobs" 
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" ORDER BY "jobs".id desc LIMIT 30 OFFSET 0[0m
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.3.3/app/views/active_admin/resource/index.html.arb (125.0ms)
+Completed 200 OK in 165ms (Views: 129.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.159.1 at 2011-11-03 13:45:44 +0100
+Served asset /active_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.159.1 at 2011-11-03 13:45:44 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 192.168.159.1 at 2011-11-03 13:45:45 +0100
+Served asset /active_admin/orderable.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 192.168.159.1 at 2011-11-03 13:45:45 +0100
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/jobs/new" for 192.168.159.1 at 2011-11-03 13:45:46 +0100
+  Processing by Admin::JobsController#new as HTML
+  [1m[35mAdminUser Load (0.1ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.3.3/app/views/active_admin/resource/new.html.arb (92.5ms)
+Completed 200 OK in 136ms (Views: 96.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.159.1 at 2011-11-03 13:45:46 +0100
+Served asset /active_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.159.1 at 2011-11-03 13:45:46 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started POST "/admin/jobs" for 192.168.159.1 at 2011-11-03 13:45:50 +0100
+  Processing by Admin::JobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ty/OcX3jB6hT467Xrj+xreF5HG6mp6X1xt7YKV0QW9w=", "job"=>{"name"=>"wqe1232132", "title"=>"1321", "content"=>"312312312"}, "commit"=>"Create Job"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "jobs" ("content", "created_at", "name", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["content", "312312312"], ["created_at", Thu, 03 Nov 2011 12:45:50 UTC +00:00], ["name", "wqe1232132"], ["title", "1321"], ["updated_at", Thu, 03 Nov 2011 12:45:50 UTC +00:00], ["user_id", nil]]
+Redirected to http://192.168.159.128:3000/admin/jobs/4
+Completed 302 Found in 55ms
+
+
+Started GET "/admin/jobs/4" for 192.168.159.1 at 2011-11-03 13:45:50 +0100
+  Processing by Admin::JobsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_id" = 4 AND "active_admin_comments"."resource_type" = 'Job' AND "active_admin_comments"."namespace" = 'admin'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_id" = 4 AND "active_admin_comments"."resource_type" = 'Job' AND "active_admin_comments"."namespace" = 'admin'
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.3.3/app/views/active_admin/resource/show.html.arb (27.2ms)
+Completed 200 OK in 139ms (Views: 32.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.159.1 at 2011-11-03 13:45:50 +0100
+Served asset /active_admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.159.1 at 2011-11-03 13:45:50 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 192.168.159.1 at 2011-11-03 13:45:53 +0100
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 155ms (Views: 153.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-03 13:45:53 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:53 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:53 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:53 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:53 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:53 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:53 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:53 +0100
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:53 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-03 13:45:53 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-03 13:45:54 +0100
+  Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs" 
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 1 AND "users"."id" = 1 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 2 AND "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 3 AND "users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 4 AND "users"."id" = 1 LIMIT 1[0m
+Rendered jobs/index.html.erb within layouts/application (236.5ms)
+Completed 200 OK in 253ms (Views: 248.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-03 13:45:55 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:55 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:55 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:55 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:55 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:55 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:55 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:55 +0100
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:55 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-03 13:45:55 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/jobs/4" for 192.168.159.1 at 2011-11-03 13:45:56 +0100
+  Processing by JobsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 4 AND "users"."id" = 1 LIMIT 1
+Rendered jobs/show.html.erb within layouts/application (217.4ms)
+Completed 200 OK in 237ms (Views: 230.0ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-03 13:45:56 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:56 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:56 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:56 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:56 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:56 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:56 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:57 +0100
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-03 13:45:57 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-03 13:45:57 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/jobs/4" for 192.168.159.1 at 2011-11-03 13:46:03 +0100
+  Processing by JobsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 4 AND "users"."id" = 1 LIMIT 1[0m
+Rendered jobs/show.html.erb within layouts/application (464.3ms)
+Completed 200 OK in 493ms (Views: 488.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-03 13:46:03 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-03 13:46:03 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-03 13:46:03 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-03 13:46:03 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-03 13:46:03 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-03 13:46:03 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-03 13:46:03 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-03 13:46:03 +0100
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-03 13:46:03 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-03 13:46:03 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
+
+
+Started PUT "/add_job/4" for 192.168.159.1 at 2011-11-03 13:46:04 +0100
+  Processing by JobsController#add_job as HTML
+  Parameters: {"authenticity_token"=>"ty/OcX3jB6hT467Xrj+xreF5HG6mp6X1xt7YKV0QW9w=", "id"=>"4"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mJob Load (0.4ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "applications" ("created_at", "job_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Thu, 03 Nov 2011 12:46:05 UTC +00:00], ["job_id", 4], ["updated_at", Thu, 03 Nov 2011 12:46:05 UTC +00:00], ["user_id", 1]]
+Redirected to http://192.168.159.128:3000/jobs
+Completed 302 Found in 193ms
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-03 13:46:05 +0100
+  Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" [0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 1 AND "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 2 AND "users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 3 AND "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 4 AND "users"."id" = 1 LIMIT 1
+Rendered jobs/index.html.erb within layouts/application (166.4ms)
+Completed 200 OK in 184ms (Views: 181.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-03 13:46:05 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-03 13:46:05 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-03 13:46:05 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-03 13:46:05 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-03 13:46:05 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-03 13:46:05 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-03 13:46:05 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-03 13:46:05 +0100
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-03 13:46:05 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-03 13:46:05 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-03 13:46:15 +0100
+  Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" [0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 1 AND "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 2 AND "users"."id" = 1 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 3 AND "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 4 AND "users"."id" = 1 LIMIT 1
+Rendered jobs/index.html.erb within layouts/application (167.8ms)
+Completed 200 OK in 184ms (Views: 180.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-03 13:46:15 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-03 13:46:15 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-03 13:46:15 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-03 13:46:15 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-03 13:46:15 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-03 13:46:15 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-03 13:46:15 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-03 13:46:15 +0100
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-03 13:46:15 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-03 13:46:15 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)

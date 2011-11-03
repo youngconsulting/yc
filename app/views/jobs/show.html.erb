@@ -1,18 +1,23 @@
 <p id="notice"><%= notice %></p>
+  <h2><%= @job.name %></h2>
+<%= @job.updated_at.strftime("%d/%m/%Y") %>
 
-<p>
-  <b>Name:</b>
-  <%= @job.name %>
-</p>
+<br />
 
-<p>
-  <b>Title:</b>
-  <%= @job.title %>
-</p>
+<%= @job.title %>
 
-<p>
-  <b>Content:</b>
-  <%= @job.content %>
-</p>
+<br /><br />
 
-<%= link_to 'Back', jobs_path %>
+<%= @job.content %>
+
+<br /><br />
+<% if current_user %>
+  <% if @job.users.exists?(current_user) %>
+    <span style="color:green;">Du har sökt jobbet</span>
+  <% else %>
+    <%= link_to("Sök jobbet", add_job_path(@job.id), :method => :put) %>
+  <% end %>
+<% end %>
+<br />
+<br />
+<%= link_to 'Tillbaka', jobs_path %>
