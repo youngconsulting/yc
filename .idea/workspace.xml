@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef51aea2-39dc-4153-b24d-007a2fc62c18" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/jobs/index.html.erb" afterPath="$PROJECT_DIR$/app/views/jobs/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-    </list>
+    <list default="true" id="ef51aea2-39dc-4153-b24d-007a2fc62c18" name="Default" comment="" />
     <ignored path="yc.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,19 +36,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jobs_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="jobs_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/jobs_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="112" selection-end="112" vertical-scroll-proportion="0.040332146">
+            <state line="5" column="14" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/jobs/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="28" selection-start="412" selection-end="412" vertical-scroll-proportion="-10.461538">
+            <state line="20" column="32" selection-start="550" selection-end="550" vertical-scroll-proportion="0.41615668">
               <folding />
             </state>
           </provider>
@@ -131,8 +127,8 @@
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20111102205359_create_applications.rb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/jobs/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/jobs_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/jobs/index.html.erb" />
       </list>
     </option>
   </component>
@@ -603,16 +599,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/jobs/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/jobs_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="28" selection-start="412" selection-end="412" vertical-scroll-proportion="-10.461538">
+        <state line="5" column="14" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/jobs_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/jobs/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="112" selection-end="112" vertical-scroll-proportion="0.040332146">
+        <state line="20" column="32" selection-start="550" selection-end="550" vertical-scroll-proportion="0.41615668">
           <folding />
         </state>
       </provider>
