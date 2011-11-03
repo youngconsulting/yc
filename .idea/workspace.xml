@@ -48,7 +48,11 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/jobs/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state line="20" column="32" selection-start="550" selection-end="550" vertical-scroll-proportion="0.41615668">
+=======
+            <state line="14" column="25" selection-start="315" selection-end="315" vertical-scroll-proportion="0.29130965">
+>>>>>>> jobs_feature
               <folding />
             </state>
           </provider>
@@ -608,7 +612,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/jobs/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="20" column="32" selection-start="550" selection-end="550" vertical-scroll-proportion="0.41615668">
+=======
+        <state line="14" column="25" selection-start="315" selection-end="315" vertical-scroll-proportion="0.29130965">
+>>>>>>> jobs_feature
           <folding />
         </state>
       </provider>
