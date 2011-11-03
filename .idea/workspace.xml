@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef51aea2-39dc-4153-b24d-007a2fc62c18" name="Default" comment="">
-      <change type="DELETED" beforePath="Z:\Projects\yc\.idea\.generators" afterPath="" />
-      <change type="DELETED" beforePath="Z:\Projects\yc\.idea\.name" afterPath="" />
-      <change type="DELETED" beforePath="Z:\Projects\yc\.idea\.rakeTasks" afterPath="" />
-      <change type="DELETED" beforePath="Z:\Projects\yc\.idea\dataSources.ids" afterPath="" />
-      <change type="DELETED" beforePath="Z:\Projects\yc\.idea\dataSources.xml" afterPath="" />
-      <change type="DELETED" beforePath="Z:\Projects\yc\.idea\dictionaries\Daniel.xml" afterPath="" />
-      <change type="DELETED" beforePath="Z:\Projects\yc\.idea\encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="Z:\Projects\yc\.idea\inspectionProfiles\Project_Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="Z:\Projects\yc\.idea\inspectionProfiles\profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="Z:\Projects\yc\.idea\misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="Z:\Projects\yc\.idea\modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="Z:\Projects\yc\.idea\vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="Z:\Projects\yc\.idea\workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="Z:\Projects\yc\.idea\yc.iml" afterPath="" />
-    </list>
+    <list default="true" id="ef51aea2-39dc-4153-b24d-007a2fc62c18" name="Default" comment="" />
     <ignored path="yc.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,7 +48,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/jobs/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="35" selection-start="469" selection-end="469" vertical-scroll-proportion="0.374541">
+            <state line="24" column="35" selection-start="593" selection-end="593" vertical-scroll-proportion="0.499388">
               <folding />
             </state>
           </provider>
@@ -541,7 +526,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/jobs/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="35" selection-start="469" selection-end="469" vertical-scroll-proportion="0.374541">
+        <state line="24" column="35" selection-start="593" selection-end="593" vertical-scroll-proportion="0.499388">
           <folding />
         </state>
       </provider>
