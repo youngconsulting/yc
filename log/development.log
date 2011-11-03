@@ -24998,3 +24998,969 @@ Served asset /application.js - 304 Not Modified (0ms)
 
 Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-03 12:08:49 +0100
 Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20111024143150)
+Migrating to AddFieldToUser (20111024155136)
+Migrating to DeviseCreateAdminUsers (20111024161725)
+Migrating to CreateAdminNotes (20111024181731)
+Migrating to MoveAdminNotesToComments (20111024181732)
+Migrating to AddFieldsToUser (20111025070529)
+Migrating to AddAttachmentCvToUser (20111025072645)
+Migrating to AddAttachmentPhotoToUser (20111025075421)
+Migrating to CreateJobs (20111028124523)
+Migrating to AddJobIdToUser (20111102201853)
+Migrating to AddUserIdToJob (20111102204940)
+Migrating to CreateApplications (20111102205359)
+Migrating to AddRoleToUsers (20111103120110)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "users" ADD "role" varchar(255)[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20111103120110')
+  [1m[36m (0.5ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("active_admin_comments")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_active_admin_comments_on_author_type_and_author_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_active_admin_comments_on_namespace')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_admin_notes_on_resource_type_and_resource_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("admin_users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_admin_users_on_reset_password_token')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_admin_users_on_email')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("applications")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("jobs")[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20111024143150)
+Migrating to AddFieldToUser (20111024155136)
+Migrating to DeviseCreateAdminUsers (20111024161725)
+Migrating to CreateAdminNotes (20111024181731)
+Migrating to MoveAdminNotesToComments (20111024181732)
+Migrating to AddFieldsToUser (20111025070529)
+Migrating to AddAttachmentCvToUser (20111025072645)
+Migrating to AddAttachmentPhotoToUser (20111025075421)
+Migrating to CreateJobs (20111028124523)
+Migrating to AddJobIdToUser (20111102201853)
+Migrating to AddUserIdToJob (20111102204940)
+Migrating to CreateApplications (20111102205359)
+Migrating to AddRoleToUsers (20111103120206)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "role" varchar(255) DEFAULT 'user'[0m
+SQLite3::SQLException: duplicate column name: role: ALTER TABLE "users" ADD "role" varchar(255) DEFAULT 'user'
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20111024143150)
+Migrating to AddFieldToUser (20111024155136)
+Migrating to DeviseCreateAdminUsers (20111024161725)
+Migrating to CreateAdminNotes (20111024181731)
+Migrating to MoveAdminNotesToComments (20111024181732)
+Migrating to AddFieldsToUser (20111025070529)
+Migrating to AddAttachmentCvToUser (20111025072645)
+Migrating to AddAttachmentPhotoToUser (20111025075421)
+Migrating to CreateJobs (20111028124523)
+Migrating to AddJobIdToUser (20111102201853)
+Migrating to AddUserIdToJob (20111102204940)
+Migrating to CreateApplications (20111102205359)
+Migrating to AddRoleToUsers (20111103120206)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "role" varchar(255) DEFAULT 'user'[0m
+SQLite3::SQLException: duplicate column name: role: ALTER TABLE "users" ADD "role" varchar(255) DEFAULT 'user'
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (25.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (10.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20111024143150)
+  [1m[35m (0.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(128) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.4ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_email')
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20111024143150')
+Migrating to AddFieldToUser (20111024155136)
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "users" ADD "fname" varchar(255)[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "users" ADD "lname" varchar(255)
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD "bday" String[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "address" varchar(255)
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "areacode" varchar(255)[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "city" varchar(255)
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "users" ADD "education" varchar(255)[0m
+  [1m[35m (1.3ms)[0m  ALTER TABLE "users" ADD "info" text
+  [1m[36m (2.2ms)[0m  [1mALTER TABLE "users" ADD "looking_for" varchar(255)[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20111024155136')
+Migrating to DeviseCreateAdminUsers (20111024161725)
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "admin_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(128) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "admin_users" WHERE "admin_users"."email" = 'admin@example.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO "admin_users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Thu, 03 Nov 2011 12:03:56 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "admin@example.com"], ["encrypted_password", "$2a$10$Gy7M1GFu3bNH6.Q6ey/c0Ooz0sQm2XI2vr2.e2j6LaYR/rRO0gsV."], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Thu, 03 Nov 2011 12:03:56 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("admin_users")
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "index_admin_users_on_email" ON "admin_users" ("email")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("admin_users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_admin_users_on_email')[0m
+  [1m[35m (0.2ms)[0m  CREATE UNIQUE INDEX "index_admin_users_on_reset_password_token" ON "admin_users" ("reset_password_token")
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20111024161725')[0m
+Migrating to CreateAdminNotes (20111024181731)
+  [1m[35m (0.4ms)[0m  CREATE TABLE "admin_notes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "resource_id" integer NOT NULL, "resource_type" varchar(255) NOT NULL, "admin_user_id" integer, "admin_user_type" varchar(255), "body" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("admin_notes")[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_admin_notes_on_resource_type_and_resource_id" ON "admin_notes" ("resource_type", "resource_id")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("admin_notes")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_admin_notes_on_resource_type_and_resource_id')
+  [1m[36m (0.3ms)[0m  [1mCREATE INDEX "index_admin_notes_on_admin_user_type_and_admin_user_id" ON "admin_notes" ("admin_user_type", "admin_user_id")[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20111024181731')
+Migrating to MoveAdminNotesToComments (20111024181732)
+  [1m[36m (0.6ms)[0m  [1mPRAGMA index_list("admin_notes")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_admin_notes_on_admin_user_type_and_admin_user_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_admin_notes_on_resource_type_and_resource_id')[0m
+  [1m[35m (0.3ms)[0m  DROP INDEX "index_admin_notes_on_admin_user_type_and_admin_user_id"
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "admin_notes" RENAME TO "active_admin_comments"[0m
+  [1m[35m (0.5ms)[0m  CREATE TEMPORARY TABLE "altered_active_admin_comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "resource_id" integer NOT NULL, "resource_type" varchar(255) NOT NULL, "admin_user_id" integer, "author_type" varchar(255), "body" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("active_admin_comments")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_admin_notes_on_resource_type_and_resource_id')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("altered_active_admin_comments")[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "temp_index_admin_notes_on_resource_type_and_resource_id" ON "altered_active_admin_comments" ("resource_type", "resource_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "active_admin_comments"[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "active_admin_comments"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "active_admin_comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "resource_id" integer NOT NULL, "resource_type" varchar(255) NOT NULL, "admin_user_id" integer, "author_type" varchar(255), "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("altered_active_admin_comments")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('temp_index_admin_notes_on_resource_type_and_resource_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("active_admin_comments")
+  [1m[36m (0.2ms)[0m  [1mCREATE INDEX "index_admin_notes_on_resource_type_and_resource_id" ON "active_admin_comments" ("resource_type", "resource_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "altered_active_admin_comments"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "altered_active_admin_comments"[0m
+  [1m[35m (0.2ms)[0m  CREATE TEMPORARY TABLE "altered_active_admin_comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "resource_id" integer NOT NULL, "resource_type" varchar(255) NOT NULL, "author_id" integer, "author_type" varchar(255), "body" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("active_admin_comments")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_admin_notes_on_resource_type_and_resource_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("altered_active_admin_comments")[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "temp_index_admin_notes_on_resource_type_and_resource_id" ON "altered_active_admin_comments" ("resource_type", "resource_id")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "active_admin_comments"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "active_admin_comments"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "active_admin_comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "resource_id" integer NOT NULL, "resource_type" varchar(255) NOT NULL, "author_id" integer, "author_type" varchar(255), "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("altered_active_admin_comments")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('temp_index_admin_notes_on_resource_type_and_resource_id')[0m
+  [1m[35m (0.2ms)[0m  PRAGMA index_list("active_admin_comments")
+  [1m[36m (0.3ms)[0m  [1mCREATE INDEX "index_admin_notes_on_resource_type_and_resource_id" ON "active_admin_comments" ("resource_type", "resource_id")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "altered_active_admin_comments"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "altered_active_admin_comments"[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "active_admin_comments" ADD "namespace" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("active_admin_comments")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_admin_notes_on_resource_type_and_resource_id')
+  [1m[36m (0.3ms)[0m  [1mCREATE INDEX "index_active_admin_comments_on_namespace" ON "active_admin_comments" ("namespace")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("active_admin_comments")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_active_admin_comments_on_namespace')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_admin_notes_on_resource_type_and_resource_id')
+  [1m[36m (0.3ms)[0m  [1mCREATE INDEX "index_active_admin_comments_on_author_type_and_author_id" ON "active_admin_comments" ("author_type", "author_id")[0m
+  [1m[35m (0.1ms)[0m  UPDATE active_admin_comments SET namespace='admin'
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20111024181732')[0m
+Migrating to AddFieldsToUser (20111025070529)
+  [1m[35m (0.7ms)[0m  ALTER TABLE "users" ADD "tele" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20111025070529')[0m
+Migrating to AddAttachmentCvToUser (20111025072645)
+  [1m[35m (0.6ms)[0m  ALTER TABLE "users" ADD "cv_file_name" varchar(255)
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "users" ADD "cv_content_type" varchar(255)[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "cv_file_size" integer
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "cv_updated_at" datetime[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20111025072645')
+Migrating to AddAttachmentPhotoToUser (20111025075421)
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ADD "photo_file_name" varchar(255)[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "photo_content_type" varchar(255)
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ADD "photo_file_size" integer[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "users" ADD "photo_updated_at" datetime
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20111025075421')[0m
+Migrating to CreateJobs (20111028124523)
+  [1m[35m (0.5ms)[0m  CREATE TABLE "jobs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "title" varchar(255), "content" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20111028124523')[0m
+Migrating to AddJobIdToUser (20111102201853)
+  [1m[35m (0.5ms)[0m  ALTER TABLE "users" ADD "job_id" integer
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20111102201853')[0m
+Migrating to AddUserIdToJob (20111102204940)
+  [1m[35m (0.4ms)[0m  ALTER TABLE "jobs" ADD "user_id" integer
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20111102204940')[0m
+Migrating to CreateApplications (20111102205359)
+  [1m[35m (0.7ms)[0m  CREATE TABLE "applications" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "job_id" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20111102205359')[0m
+Migrating to AddRoleToUsers (20111103120206)
+  [1m[35m (0.5ms)[0m  ALTER TABLE "users" ADD "role" varchar(255) DEFAULT 'user'
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20111103120206')[0m
+  [1m[35m (0.6ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("active_admin_comments")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_active_admin_comments_on_author_type_and_author_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_active_admin_comments_on_namespace')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_admin_notes_on_resource_type_and_resource_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("admin_users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_admin_users_on_reset_password_token')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_admin_users_on_email')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("applications")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("jobs")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-03 13:05:45 +0100
+  Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" [0m
+Rendered jobs/index.html.erb within layouts/application (6.9ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 166ms (Views: 163.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-03 13:05:46 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-03 13:05:46 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-03 13:05:46 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-03 13:05:46 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-03 13:05:46 +0100
+Served asset /active_admin/base.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-03 13:05:46 +0100
+Served asset /active_admin.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-03 13:05:46 +0100
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-03 13:05:46 +0100
+Served asset /jobs.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-03 13:05:46 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-03 13:05:46 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/users/sign_up" for 192.168.159.1 at 2011-11-03 13:05:47 +0100
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/registrations/new.html.erb within layouts/application (106.3ms)
+Completed 200 OK in 161ms (Views: 128.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-03 13:05:48 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-03 13:05:48 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-03 13:05:48 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-03 13:05:48 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-03 13:05:48 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-03 13:05:48 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-03 13:05:48 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-03 13:05:48 +0100
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-03 13:05:48 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-03 13:05:48 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 192.168.159.1 at 2011-11-03 13:05:57 +0100
+  Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ty/OcX3jB6hT467Xrj+xreF5HG6mp6X1xt7YKV0QW9w=", "user"=>{"email"=>"znowm4n@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "fname"=>"", "lname"=>"", "bday"=>"", "tele"=>"", "address"=>"", "areacode"=>"", "city"=>"", "looking_for"=>"Kontor", "education"=>"Gymnasium", "info"=>""}, "commit"=>"Registrera dig"}
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."email" = 'znowm4n@gmail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (5.2ms)[0m  INSERT INTO "users" ("address", "areacode", "bday", "city", "created_at", "current_sign_in_at", "current_sign_in_ip", "cv_content_type", "cv_file_name", "cv_file_size", "cv_updated_at", "education", "email", "encrypted_password", "fname", "info", "job_id", "last_sign_in_at", "last_sign_in_ip", "lname", "looking_for", "photo_content_type", "photo_file_name", "photo_file_size", "photo_updated_at", "remember_created_at", "reset_password_sent_at", "reset_password_token", "role", "sign_in_count", "tele", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", ""], ["areacode", ""], ["bday", ""], ["city", ""], ["created_at", Thu, 03 Nov 2011 12:05:58 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["cv_content_type", nil], ["cv_file_name", nil], ["cv_file_size", nil], ["cv_updated_at", nil], ["education", "Gymnasium"], ["email", "znowm4n@gmail.com"], ["encrypted_password", "$2a$10$tpo9fU8NkydQIxJ/14c2suTT17lYp2UmHs5.er8q7bwyuRuP8NRt."], ["fname", ""], ["info", ""], ["job_id", nil], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["lname", ""], ["looking_for", "Kontor"], ["photo_content_type", nil], ["photo_file_name", nil], ["photo_file_size", nil], ["photo_updated_at", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["role", "user"], ["sign_in_count", 0], ["tele", ""], ["updated_at", Thu, 03 Nov 2011 12:05:58 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2011-11-03 12:05:58.226057', "current_sign_in_at" = '2011-11-03 12:05:58.226057', "last_sign_in_ip" = '192.168.159.1', "current_sign_in_ip" = '192.168.159.1', "sign_in_count" = 1, "updated_at" = '2011-11-03 12:05:58.226634' WHERE "users"."id" = 1[0m
+[paperclip] Saving attachments.
+Redirected to http://192.168.159.128:3000/
+Completed 302 Found in 407ms
+
+
+Started GET "/" for 192.168.159.1 at 2011-11-03 13:05:58 +0100
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 141ms (Views: 139.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-03 13:05:58 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-03 13:05:58 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-03 13:05:58 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-03 13:05:58 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-03 13:05:58 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-03 13:05:58 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-03 13:05:58 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-03 13:05:58 +0100
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-03 13:05:58 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-03 13:05:58 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/users/edit" for 192.168.159.1 at 2011-11-03 13:06:19 +0100
+  Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" INNER JOIN "applications" ON "jobs"."id" = "applications"."job_id" WHERE "applications"."user_id" = 1
+Rendered devise/registrations/edit.html.erb within layouts/application (155.7ms)
+Completed 200 OK in 298ms (Views: 171.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-03 13:06:20 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:20 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:20 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:20 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:20 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:20 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:20 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:20 +0100
+Served asset /jobs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:20 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-03 13:06:20 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-03 13:06:24 +0100
+  Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs" [0m
+Rendered jobs/index.html.erb within layouts/application (1.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 145ms (Views: 143.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-03 13:06:24 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:24 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:24 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:24 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:24 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:24 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:24 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:24 +0100
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:24 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-03 13:06:24 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/edit" for 192.168.159.1 at 2011-11-03 13:06:30 +0100
+  Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mJob Load (0.3ms)[0m  SELECT "jobs".* FROM "jobs" INNER JOIN "applications" ON "jobs"."id" = "applications"."job_id" WHERE "applications"."user_id" = 1
+Rendered devise/registrations/edit.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 159ms (Views: 36.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-03 13:06:30 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:30 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:30 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:30 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:30 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:30 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:30 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:30 +0100
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:30 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-03 13:06:30 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
+
+
+Started PUT "/users" for 192.168.159.1 at 2011-11-03 13:06:37 +0100
+  Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ty/OcX3jB6hT467Xrj+xreF5HG6mp6X1xt7YKV0QW9w=", "user"=>{"fname"=>"Daniel", "lname"=>"G", "bday"=>"", "tele"=>"", "address"=>"", "areacode"=>"", "city"=>"", "looking_for"=>"Kontor", "education"=>"Gymnasium", "info"=>"", "current_password"=>"[FILTERED]"}, "commit"=>"Uppdatera profil"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" INNER JOIN "applications" ON "jobs"."id" = "applications"."job_id" WHERE "applications"."user_id" = 1[0m
+Rendered devise/registrations/edit.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 249ms (Views: 35.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-03 13:06:37 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:37 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:37 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:37 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:37 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:37 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:37 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:37 +0100
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:37 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-03 13:06:37 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
+
+
+Started PUT "/users" for 192.168.159.1 at 2011-11-03 13:06:47 +0100
+  Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ty/OcX3jB6hT467Xrj+xreF5HG6mp6X1xt7YKV0QW9w=", "user"=>{"fname"=>"Daniel", "lname"=>"G", "bday"=>"", "tele"=>"", "address"=>"", "areacode"=>"", "city"=>"", "looking_for"=>"Kontor", "education"=>"Gymnasium", "info"=>"", "current_password"=>"[FILTERED]"}, "commit"=>"Uppdatera profil"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "fname" = 'Daniel', "lname" = 'G', "updated_at" = '2011-11-03 12:06:48.024433' WHERE "users"."id" = 1
+[paperclip] Saving attachments.
+Redirected to http://192.168.159.128:3000/
+Completed 302 Found in 260ms
+
+
+Started GET "/" for 192.168.159.1 at 2011-11-03 13:06:48 +0100
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 203ms (Views: 201.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-03 13:06:48 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:48 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:48 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:48 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:48 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:48 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:48 +0100
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:48 +0100
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:48 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-03 13:06:48 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-03 13:06:53 +0100
+  Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" 
+Rendered jobs/index.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 138ms (Views: 135.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-03 13:06:53 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:53 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:53 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:53 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:53 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:53 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:53 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:53 +0100
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:53 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-03 13:06:53 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 192.168.159.1 at 2011-11-03 13:06:55 +0100
+  Processing by Admin::DashboardController#index as HTML
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+Completed   in 88ms
+
+
+Started GET "/admin/login" for 192.168.159.1 at 2011-11-03 13:06:55 +0100
+  Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.7ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.3.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (71.7ms)
+Completed 200 OK in 135ms (Views: 98.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 192.168.159.1 at 2011-11-03 13:06:55 +0100
+Served asset /active_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:55 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:55 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-03 13:06:55 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started POST "/admin/login" for 192.168.159.1 at 2011-11-03 13:07:02 +0100
+  Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ty/OcX3jB6hT467Xrj+xreF5HG6mp6X1xt7YKV0QW9w=", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = 'admin@example.com' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  UPDATE "admin_users" SET "last_sign_in_at" = '2011-11-03 12:07:02.577312', "current_sign_in_at" = '2011-11-03 12:07:02.577312', "last_sign_in_ip" = '192.168.159.1', "current_sign_in_ip" = '192.168.159.1', "sign_in_count" = 1, "updated_at" = '2011-11-03 12:07:02.577879' WHERE "admin_users"."id" = 1
+Redirected to http://192.168.159.128:3000/admin
+Completed 302 Found in 131ms
+
+
+Started GET "/admin" for 192.168.159.1 at 2011-11-03 13:07:02 +0100
+  Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.3.3/app/views/active_admin/dashboard/index.html.arb (8.1ms)
+Completed 200 OK in 136ms (Views: 15.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.159.1 at 2011-11-03 13:07:02 +0100
+Served asset /active_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.159.1 at 2011-11-03 13:07:02 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/jobs" for 192.168.159.1 at 2011-11-03 13:07:06 +0100
+  Processing by Admin::JobsController#index as HTML
+  [1m[35mAdminUser Load (0.1ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "jobs" LIMIT 30 OFFSET 0) subquery_for_count [0m
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.3.3/app/views/active_admin/resource/index.html.arb (44.2ms)
+Completed 200 OK in 130ms (Views: 50.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.159.1 at 2011-11-03 13:07:06 +0100
+Served asset /active_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.159.1 at 2011-11-03 13:07:06 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 192.168.159.1 at 2011-11-03 13:07:06 +0100
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 304 Not Modified (2ms)
+
+
+Started GET "/admin/jobs/new" for 192.168.159.1 at 2011-11-03 13:07:07 +0100
+  Processing by Admin::JobsController#new as HTML
+  [1m[35mAdminUser Load (0.1ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.3.3/app/views/active_admin/resource/new.html.arb (31.9ms)
+Completed 200 OK in 127ms (Views: 35.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.159.1 at 2011-11-03 13:07:07 +0100
+Served asset /active_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.159.1 at 2011-11-03 13:07:07 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started POST "/admin/jobs" for 192.168.159.1 at 2011-11-03 13:07:11 +0100
+  Processing by Admin::JobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ty/OcX3jB6hT467Xrj+xreF5HG6mp6X1xt7YKV0QW9w=", "job"=>{"name"=>"dadsa", "title"=>"dsadsa", "content"=>"dsadsaads"}, "commit"=>"Create Job"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "jobs" ("content", "created_at", "name", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["content", "dsadsaads"], ["created_at", Thu, 03 Nov 2011 12:07:11 UTC +00:00], ["name", "dadsa"], ["title", "dsadsa"], ["updated_at", Thu, 03 Nov 2011 12:07:11 UTC +00:00], ["user_id", nil]]
+Redirected to http://192.168.159.128:3000/admin/jobs/1
+Completed 302 Found in 120ms
+
+
+Started GET "/admin/jobs/1" for 192.168.159.1 at 2011-11-03 13:07:11 +0100
+  Processing by Admin::JobsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mJob Load (0.3ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_id" = 1 AND "active_admin_comments"."resource_type" = 'Job' AND "active_admin_comments"."namespace" = 'admin'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_id" = 1 AND "active_admin_comments"."resource_type" = 'Job' AND "active_admin_comments"."namespace" = 'admin'
+Rendered /home/dg/.rvm/gems/ruby-1.9.3-p0/gems/activeadmin-0.3.3/app/views/active_admin/resource/show.html.arb (108.5ms)
+Completed 200 OK in 168ms (Views: 113.5ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.159.1 at 2011-11-03 13:07:11 +0100
+Served asset /active_admin.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.159.1 at 2011-11-03 13:07:11 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 192.168.159.1 at 2011-11-03 13:07:13 +0100
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 201ms (Views: 199.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-03 13:07:14 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:14 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:14 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:14 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:14 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:14 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:14 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:14 +0100
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:14 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-03 13:07:14 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-03 13:07:15 +0100
+  Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs" 
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 1 AND "users"."id" = 1 LIMIT 1
+Rendered jobs/index.html.erb within layouts/application (199.1ms)
+Completed 200 OK in 217ms (Views: 213.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-03 13:07:15 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:15 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:15 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:15 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:15 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:15 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:15 +0100
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:15 +0100
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:15 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-03 13:07:15 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
+
+
+Started PUT "/add_job/1" for 192.168.159.1 at 2011-11-03 13:07:17 +0100
+  Processing by JobsController#add_job as HTML
+  Parameters: {"authenticity_token"=>"ty/OcX3jB6hT467Xrj+xreF5HG6mp6X1xt7YKV0QW9w=", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "applications" ("created_at", "job_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 03 Nov 2011 12:07:18 UTC +00:00], ["job_id", 1], ["updated_at", Thu, 03 Nov 2011 12:07:18 UTC +00:00], ["user_id", 1]]
+Redirected to http://192.168.159.128:3000/jobs
+Completed 302 Found in 239ms
+
+
+Started GET "/jobs" for 192.168.159.1 at 2011-11-03 13:07:18 +0100
+  Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" 
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 1 AND "users"."id" = 1 LIMIT 1
+Rendered jobs/index.html.erb within layouts/application (202.8ms)
+Completed 200 OK in 231ms (Views: 228.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-03 13:07:18 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:18 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:18 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:18 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:18 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:18 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:18 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:18 +0100
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:18 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-03 13:07:18 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/edit" for 192.168.159.1 at 2011-11-03 13:07:20 +0100
+  Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mJob Load (0.6ms)[0m  SELECT "jobs".* FROM "jobs" INNER JOIN "applications" ON "jobs"."id" = "applications"."job_id" WHERE "applications"."user_id" = 1
+Rendered devise/registrations/edit.html.erb within layouts/application (87.8ms)
+Completed 200 OK in 227ms (Views: 102.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.159.1 at 2011-11-03 13:07:20 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:20 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:20 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:20 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:20 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:20 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:20 +0100
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:20 +0100
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.159.1 at 2011-11-03 13:07:20 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.159.1 at 2011-11-03 13:07:20 +0100
+Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)

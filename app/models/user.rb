@@ -22,7 +22,8 @@ class User < ActiveRecord::Base
     :cv_file_name, 
     :cv_content_type,
     :cv_file_size,
-    :cv_updated_at
+    :cv_updated_at,
+    :role
 
   has_attached_file :cv
 
