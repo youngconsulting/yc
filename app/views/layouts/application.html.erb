@@ -23,7 +23,7 @@
 
 		<div id="menu">
 			<ul>
-				<li class="active"><%= link_to "Startsidan", root_url %></a></li>
+				<li class="active"><%= link_to "Startsidan", root_url %></li>
 				<li><%= link_to "Lediga jobb", jobs_path %></li>
 			<% if user_signed_in? %>
 				<li><%= link_to "Min Profil", edit_user_registration_path %></li>		
@@ -40,8 +40,6 @@
     <p class="alert"><%= alert %></p>
     <%= yield %>
   </div>
-
-  <%= debug current_user %>
 
 </div>
 </body>

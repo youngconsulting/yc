@@ -13,11 +13,7 @@
       <td>Stockholm</td>
       <td>
         <% if current_user %>
-          <% if job.users.exists?(current_user) %>
-            Already applied
-          <% else %>
-            <%= link_to("Apply job", add_job_path(job.id), :method => :put) %>
-          <% end %>
+          <%= job.users.exists?(current_user) ? "Already applied" : link_to("Apply job", add_job_path(job.id), :method => :put) %>
         <% end %>
       </td>
     </tr>
