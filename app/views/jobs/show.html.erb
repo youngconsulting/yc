@@ -18,6 +18,11 @@
     <%= link_to("Sök jobbet", add_job_path(@job.id), :method => :put) %>
   <% end %>
 <% end %>
+
+<% if user_signed_in? %>
+<% else %>
+<span style="text-decoration:underline;">Du måste vara inloggad och registrerad för att kunna ansöka.</span>
+<% end %>
 <br />
 <br />
 <%= link_to 'Tillbaka', jobs_path %>
