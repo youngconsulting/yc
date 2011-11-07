@@ -24,7 +24,7 @@ ActiveAdmin.register User do
 		column "E-mail", :email
 
     column "CV", :cv_file_name do |user|
-      link_to user.cv_file_name, "#{root_url}system/cvs/#{user.id}/original/#{user.cv_file_name}"
+      link_to user.cv_file_name, "#{root_path}system/cvs/#{user.id}/original/#{user.cv_file_name}"
     end
 
 		default_actions
