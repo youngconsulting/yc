@@ -4,5 +4,10 @@ ActiveAdmin.register Job do
 		column :name	
 		column :title
 		default_actions
-	 end
+   end
+
+   show do
+     attributes_table :name, :title, :content
+     render "users"
+   end
 end
