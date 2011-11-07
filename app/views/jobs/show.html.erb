@@ -18,7 +18,7 @@
     <%= link_to("Sök jobbet", add_job_path(@job.id), :method => :put) %>
   <% end %>
 <% else %>
-  <p>Du måste vara <%= link_to "inloggad", new_user_session_path %> och <%= link_to "registrerad", new_user_registration_path %> för att kunna ansöka.</p>
+  <p>Du måste vara <%= link_to "registrerad", new_user_registration_path %> och <%= link_to "inloggad", new_user_session_path %> för att kunna ansöka.</p>
 <% end %>
 
 <br />
