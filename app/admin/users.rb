@@ -22,12 +22,19 @@ ActiveAdmin.register User do
 		column "Utbildning", :education
 		column "Söker jobb inom", :looking_for
 		column "E-mail", :email
+
+    column "CV", :cv_file_name do |user|
+      link_to user.cv_file_name, "system/cvs/#{user.id}/original/#{user.cv_file_name}"
+    end
+
 		default_actions
   end
 
 	show do
-    attributes_table :fname, :lname, :bday, :address, :areacode, :city, :education, :info, :looking_for,
-    :tele, :cv_file_name  
+
+    attributes_table :fname, :lname, :bday, :address, :areacode, :city, :education, :info, :looking_for, :tele, :cv_file_name
+
+    render "extra"
   end
 
 end

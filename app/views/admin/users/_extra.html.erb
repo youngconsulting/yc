@@ -1,0 +1,12 @@
+<h2>CV:</h2>
+<%= link_to user.cv_file_name, "system/cvs/#{user.id}/original/#{user.cv_file_name}" %>
+
+<br />
+<br />
+<h2>Jobs:</h2>
+<% @user.jobs.each do |job| %>
+
+  <%= link_to job.name, job %>
+  <br />
+
+<% end %>

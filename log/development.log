@@ -36173,3 +36173,1536 @@ Served asset /application.js - 304 Not Modified (11ms)
 
 Started GET "/assets/gfx/yc-logo.png" for 127.0.0.1 at 2011-11-07 11:26:57 +0100
 Served asset /gfx/yc-logo.png - 304 Not Modified (0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20111024143150)
+Migrating to AddFieldToUser (20111024155136)
+Migrating to DeviseCreateAdminUsers (20111024161725)
+Migrating to CreateAdminNotes (20111024181731)
+Migrating to MoveAdminNotesToComments (20111024181732)
+Migrating to AddFieldsToUser (20111025070529)
+Migrating to AddAttachmentCvToUser (20111025072645)
+Migrating to AddAttachmentPhotoToUser (20111025075421)
+Migrating to CreateJobs (20111028124523)
+Migrating to CreateApplications (20111102205359)
+Migrating to AddRoleToUsers (20111103120206)
+  [1m[35m (0.6ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("active_admin_comments")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_active_admin_comments_on_author_type_and_author_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_active_admin_comments_on_namespace')
+  [1m[36m (0.2ms)[0m  [1mPRAGMA index_info('index_admin_notes_on_resource_type_and_resource_id')[0m
+  [1m[35m (1.6ms)[0m  PRAGMA index_list("admin_users")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_admin_users_on_reset_password_token')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_admin_users_on_email')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("applications")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("jobs")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+
+
+Started GET "/" for 192.168.200.1 at 2011-11-07 13:01:05 +0100
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (27.1ms)
+Cache for Asset (application.js) is stale
+/home/niklas/.rvm/gems/ruby-1.9.2-p290/gems/jquery-rails-1.0.16/vendor/assets/javascripts/jquery.js isn't in paths: /home/dg/Projects/yc/app/assets/images, /home/dg/Projects/yc/app/assets/javascripts, /home/dg/Projects/yc/app/assets/stylesheets, /home/dg/Projects/yc/vendor/assets/stylesheets, /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/jquery-rails-1.0.16/vendor/assets/javascripts, /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/assets/images, /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/assets/javascripts, /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/assets/stylesheets
+Compiled application.js  (44ms)  (pid 1947)
+Cache for Asset (active_admin.js) is stale
+/home/niklas/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/assets/javascripts/active_admin/vendor.js isn't in paths: /home/dg/Projects/yc/app/assets/images, /home/dg/Projects/yc/app/assets/javascripts, /home/dg/Projects/yc/app/assets/stylesheets, /home/dg/Projects/yc/vendor/assets/stylesheets, /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/jquery-rails-1.0.16/vendor/assets/javascripts, /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/assets/images, /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/assets/javascripts, /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/assets/stylesheets
+Compiled active_admin.js  (4ms)  (pid 1947)
+Compiled active_admin/base.js  (3ms)  (pid 1947)
+Compiled active_admin/vendor.js  (1ms)  (pid 1947)
+Compiled main.js  (0ms)  (pid 1947)
+Completed 200 OK in 655ms (Views: 653.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.200.1 at 2011-11-07 13:01:06 +0100
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.200.1 at 2011-11-07 13:01:06 +0100
+Served asset /jquery.js - 200 OK (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.200.1 at 2011-11-07 13:01:06 +0100
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.200.1 at 2011-11-07 13:01:06 +0100
+Served asset /active_admin/vendor.js - 200 OK (7ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.200.1 at 2011-11-07 13:01:06 +0100
+Served asset /active_admin/base.js - 200 OK (5ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.200.1 at 2011-11-07 13:01:06 +0100
+Served asset /active_admin.js - 200 OK (4ms)
+
+
+Started GET "/assets/main.js?body=1" for 192.168.200.1 at 2011-11-07 13:01:07 +0100
+Served asset /main.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.200.1 at 2011-11-07 13:01:07 +0100
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/gfx/yc-logo.png" for 192.168.200.1 at 2011-11-07 13:01:07 +0100
+Served asset /gfx/yc-logo.png - 200 OK (2ms)
+
+
+Started GET "/admin" for 192.168.200.1 at 2011-11-07 13:01:12 +0100
+  Processing by Admin::DashboardController#index as HTML
+Completed   in 71ms
+
+
+Started GET "/admin/login" for 192.168.200.1 at 2011-11-07 13:01:12 +0100
+  Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.2ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (112.7ms)
+Compiled active_admin.css  (1245ms)  (pid 1947)
+Completed 200 OK in 1495ms (Views: 1460.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 192.168.200.1 at 2011-11-07 13:01:14 +0100
+Served asset /active_admin.css - 200 OK (1ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.200.1 at 2011-11-07 13:01:14 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.200.1 at 2011-11-07 13:01:14 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.200.1 at 2011-11-07 13:01:14 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started POST "/admin/login" for 192.168.200.1 at 2011-11-07 13:01:23 +0100
+  Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WMyjs1248xSivwoIWZ0T08KOHpm3GP4J9UjPJ6pQ088=", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (14.6ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = 'admin@example.com' LIMIT 1[0m
+  [1m[35m (32.5ms)[0m  UPDATE "admin_users" SET "last_sign_in_at" = '2011-11-04 12:06:27.255300', "current_sign_in_at" = '2011-11-07 12:01:24.147470', "current_sign_in_ip" = '192.168.200.1', "sign_in_count" = 4, "updated_at" = '2011-11-07 12:01:24.162225' WHERE "admin_users"."id" = 1
+Redirected to http://192.168.200.120:3000/admin
+Completed 302 Found in 709ms
+
+
+Started GET "/admin" for 192.168.200.1 at 2011-11-07 13:01:24 +0100
+  Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/dashboard/index.html.arb (18.6ms)
+Completed 200 OK in 125ms (Views: 29.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:01:24 +0100
+Served asset /active_admin.css - 200 OK (1ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:01:24 +0100
+Served asset /active_admin.js - 200 OK (0ms)
+
+
+Started GET "/admin/users" for 192.168.200.1 at 2011-11-07 13:01:27 +0100
+  Processing by Admin::UsersController#index as HTML
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users".id desc LIMIT 30 OFFSET 0[0m
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/index.html.arb (323.1ms)
+Completed 200 OK in 493ms (Views: 333.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 192.168.200.1 at 2011-11-07 13:01:28 +0100
+Served asset /active_admin/orderable.png - 200 OK (15ms)
+
+
+Started GET "/admin/users/1" for 192.168.200.1 at 2011-11-07 13:01:31 +0100
+  Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (4.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/show.html.arb (18.0ms)
+Completed 500 Internal Server Error in 145ms
+
+ActionView::Template::Error (undefined method `column' for #<ActiveAdmin::Views::Pages::Show:0x0000000558e4b8>):
+    1: render renderer_for(:show)
+  app/admin/users.rb:32:in `block (2 levels) in <top (required)>'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.4ms)
+
+
+Started GET "/admin/users/1" for 192.168.200.1 at 2011-11-07 13:06:08 +0100
+  Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdminUser Load (0.6ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/show.html.arb (21.6ms)
+Completed 500 Internal Server Error in 163ms
+
+ActionView::Template::Error (undefined method `column' for #<ActiveAdmin::Views::Pages::Show:0x000000054c2f20>):
+    1: render renderer_for(:show)
+  app/admin/users.rb:32:in `block (2 levels) in <top (required)>'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.1ms)
+
+
+Started GET "/admin/users/1" for 192.168.200.1 at 2011-11-07 13:06:09 +0100
+  Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/show.html.arb (18.4ms)
+Completed 500 Internal Server Error in 162ms
+
+ActionView::Template::Error (undefined method `column' for #<ActiveAdmin::Views::Pages::Show:0x0000000549c690>):
+    1: render renderer_for(:show)
+  app/admin/users.rb:32:in `block (2 levels) in <top (required)>'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.9ms)
+
+
+Started GET "/admin/users/1" for 192.168.200.1 at 2011-11-07 13:13:00 +0100
+  Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/show.html.arb (16.0ms)
+Completed 500 Internal Server Error in 158ms
+
+ActionView::Template::Error (undefined method `column' for #<ActiveAdmin::Views::Pages::Show:0x0000000547a720>):
+    1: render renderer_for(:show)
+  app/admin/users.rb:32:in `block (2 levels) in <top (required)>'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.6ms)
+
+
+Started GET "/admin/users/1" for 192.168.200.1 at 2011-11-07 13:13:02 +0100
+  Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/show.html.arb (14.2ms)
+Completed 500 Internal Server Error in 146ms
+
+ActionView::Template::Error (undefined method `column' for #<ActiveAdmin::Views::Pages::Show:0x00000005459728>):
+    1: render renderer_for(:show)
+  app/admin/users.rb:32:in `block (2 levels) in <top (required)>'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.6ms)
+
+
+Started GET "/admin/users/1" for 192.168.200.1 at 2011-11-07 13:13:02 +0100
+  Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/show.html.arb (15.2ms)
+Completed 500 Internal Server Error in 142ms
+
+ActionView::Template::Error (undefined method `column' for #<ActiveAdmin::Views::Pages::Show:0x000000054436f8>):
+    1: render renderer_for(:show)
+  app/admin/users.rb:32:in `block (2 levels) in <top (required)>'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.1ms)
+
+
+Started GET "/admin/users/1" for 192.168.200.1 at 2011-11-07 13:13:03 +0100
+  Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdminUser Load (0.6ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/show.html.arb (14.9ms)
+Completed 500 Internal Server Error in 140ms
+
+ActionView::Template::Error (undefined method `column' for #<ActiveAdmin::Views::Pages::Show:0x0000000542e8e8>):
+    1: render renderer_for(:show)
+  app/admin/users.rb:32:in `block (2 levels) in <top (required)>'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.1ms)
+
+
+Started GET "/admin/users/1" for 192.168.200.1 at 2011-11-07 13:13:03 +0100
+  Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/show.html.arb (15.0ms)
+Completed 500 Internal Server Error in 136ms
+
+ActionView::Template::Error (undefined method `column' for #<ActiveAdmin::Views::Pages::Show:0x0000000540bdc0>):
+    1: render renderer_for(:show)
+  app/admin/users.rb:32:in `block (2 levels) in <top (required)>'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.0ms)
+
+
+Started GET "/admin/" for 192.168.200.1 at 2011-11-07 13:13:16 +0100
+  Processing by Admin::DashboardController#index as HTML
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/dashboard/index.html.arb (7.3ms)
+Completed 200 OK in 117ms (Views: 13.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:13:16 +0100
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:13:16 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/jobs" for 192.168.200.1 at 2011-11-07 13:13:18 +0100
+  Processing by Admin::JobsController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "jobs" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "jobs" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "jobs" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "jobs" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "jobs" 
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs" ORDER BY "jobs".id desc LIMIT 30 OFFSET 0[0m
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/index.html.arb (81.5ms)
+Completed 200 OK in 206ms (Views: 166.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:13:18 +0100
+Served asset /active_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:13:18 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 192.168.200.1 at 2011-11-07 13:13:18 +0100
+Served asset /active_admin/orderable.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 192.168.200.1 at 2011-11-07 13:13:18 +0100
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 200 OK (40ms)
+
+
+Started GET "/admin/users" for 192.168.200.1 at 2011-11-07 13:13:21 +0100
+  Processing by Admin::UsersController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users".id desc LIMIT 30 OFFSET 0[0m
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/index.html.arb (143.8ms)
+Completed 200 OK in 194ms (Views: 148.7ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:13:22 +0100
+Served asset /active_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:13:22 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 192.168.200.1 at 2011-11-07 13:13:22 +0100
+Served asset /active_admin/orderable.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/users" for 192.168.200.1 at 2011-11-07 13:13:44 +0100
+  Processing by Admin::UsersController#index as HTML
+  [1m[35mAdminUser Load (0.5ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users".id desc LIMIT 30 OFFSET 0[0m
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/index.html.arb (150.4ms)
+Completed 200 OK in 342ms (Views: 157.2ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:13:45 +0100
+Served asset /active_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:13:45 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 192.168.200.1 at 2011-11-07 13:13:45 +0100
+Served asset /active_admin/orderable.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/users" for 192.168.200.1 at 2011-11-07 13:13:46 +0100
+  Processing by Admin::UsersController#index as HTML
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users".id desc LIMIT 30 OFFSET 0[0m
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/index.html.arb (145.6ms)
+Completed 200 OK in 274ms (Views: 151.1ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:13:47 +0100
+Served asset /active_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:13:47 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 192.168.200.1 at 2011-11-07 13:13:47 +0100
+Served asset /active_admin/orderable.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/users" for 192.168.200.1 at 2011-11-07 13:13:47 +0100
+  Processing by Admin::UsersController#index as HTML
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users".id desc LIMIT 30 OFFSET 0[0m
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/index.html.arb (227.2ms)
+Completed 200 OK in 279ms (Views: 231.8ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:13:47 +0100
+Served asset /active_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:13:48 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 192.168.200.1 at 2011-11-07 13:13:48 +0100
+Served asset /active_admin/orderable.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/users" for 192.168.200.1 at 2011-11-07 13:16:34 +0100
+  Processing by Admin::UsersController#index as HTML
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" ORDER BY "users".id desc LIMIT 30 OFFSET 0
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/index.html.arb (267.0ms)
+Completed 200 OK in 595ms (Views: 400.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:16:35 +0100
+Served asset /active_admin.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:16:35 +0100
+Served asset /active_admin.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 192.168.200.1 at 2011-11-07 13:16:35 +0100
+Served asset /active_admin/orderable.png - 304 Not Modified (3ms)
+
+
+Started GET "/admin/users" for 192.168.200.1 at 2011-11-07 13:18:04 +0100
+  Processing by Admin::UsersController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" ORDER BY "users".id desc LIMIT 30 OFFSET 0
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/index.html.arb (263.0ms)
+Completed 200 OK in 592ms (Views: 396.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:18:05 +0100
+Served asset /active_admin.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:18:05 +0100
+Served asset /active_admin.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 192.168.200.1 at 2011-11-07 13:18:05 +0100
+Served asset /active_admin/orderable.png - 304 Not Modified (3ms)
+
+
+Started GET "/admin/users/1" for 192.168.200.1 at 2011-11-07 13:19:13 +0100
+  Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/show.html.arb (16.0ms)
+Completed 200 OK in 146ms (Views: 22.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:19:13 +0100
+Served asset /active_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:19:13 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/users/1/edit" for 192.168.200.1 at 2011-11-07 13:19:23 +0100
+  Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (91.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/edit.html.arb (331.6ms)
+Completed 200 OK in 457ms (Views: 244.3ms | ActiveRecord: 94.1ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:19:24 +0100
+Served asset /active_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:19:24 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 192.168.200.1 at 2011-11-07 13:19:37 +0100
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 76ms (Views: 75.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.200.1 at 2011-11-07 13:19:37 +0100
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.200.1 at 2011-11-07 13:19:37 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.200.1 at 2011-11-07 13:19:37 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.200.1 at 2011-11-07 13:19:37 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.200.1 at 2011-11-07 13:19:37 +0100
+Served asset /active_admin/base.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.200.1 at 2011-11-07 13:19:37 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 192.168.200.1 at 2011-11-07 13:19:37 +0100
+Served asset /main.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.200.1 at 2011-11-07 13:19:37 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/users/sign_up" for 192.168.200.1 at 2011-11-07 13:19:52 +0100
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/registrations/new.html.erb within layouts/application (112.9ms)
+Completed 200 OK in 174ms (Views: 135.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.200.1 at 2011-11-07 13:19:52 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.200.1 at 2011-11-07 13:19:52 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.200.1 at 2011-11-07 13:19:52 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.200.1 at 2011-11-07 13:19:52 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.200.1 at 2011-11-07 13:19:52 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.200.1 at 2011-11-07 13:19:52 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 192.168.200.1 at 2011-11-07 13:19:52 +0100
+Served asset /main.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.200.1 at 2011-11-07 13:19:52 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 192.168.200.1 at 2011-11-07 13:20:22 +0100
+  Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WMyjs1248xSivwoIWZ0T08KOHpm3GP4J9UjPJ6pQ088=", "user"=>{"email"=>"test@test.dk", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "fname"=>"test", "lname"=>"test", "bday"=>"", "tele"=>"", "address"=>"", "areacode"=>"", "city"=>"", "looking_for"=>"Kontor", "education"=>"Gymnasium", "info"=>"", "cv"=>#<ActionDispatch::Http::UploadedFile:0x000000062030b8 @original_filename="1504902893-2011-09.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"user[cv]\"; filename=\"1504902893-2011-09.pdf\"\r\nContent-Type: application/pdf\r\n", @tempfile=#<File:/tmp/RackMultipart20111107-1980-1ff3m03>>}, "commit"=>"Registrera dig"}
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "users" WHERE "users"."email" = 'test@test.dk' LIMIT 1
+Binary data inserted for `string` type on column `cv_content_type`
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (31.8ms)[0m  [1mINSERT INTO "users" ("address", "areacode", "bday", "city", "created_at", "current_sign_in_at", "current_sign_in_ip", "cv_content_type", "cv_file_name", "cv_file_size", "cv_updated_at", "education", "email", "encrypted_password", "fname", "info", "job_id", "last_sign_in_at", "last_sign_in_ip", "lname", "looking_for", "photo_content_type", "photo_file_name", "photo_file_size", "photo_updated_at", "remember_created_at", "reset_password_sent_at", "reset_password_token", "role", "sign_in_count", "tele", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", ""], ["areacode", ""], ["bday", ""], ["city", ""], ["created_at", Mon, 07 Nov 2011 12:20:22 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["cv_content_type", "application/pdf"], ["cv_file_name", "1504902893-2011-09.pdf"], ["cv_file_size", 78848], ["cv_updated_at", Mon, 07 Nov 2011 12:20:22 UTC +00:00], ["education", "Gymnasium"], ["email", "test@test.dk"], ["encrypted_password", "$2a$10$R9kAAjYvx1gNBRG/cVinf.NIm79wA8Rg3.kbdCvndEqusC4W776C6"], ["fname", "test"], ["info", ""], ["job_id", nil], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["lname", "test"], ["looking_for", "Kontor"], ["photo_content_type", nil], ["photo_file_name", nil], ["photo_file_size", nil], ["photo_updated_at", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["role", "user"], ["sign_in_count", 0], ["tele", ""], ["updated_at", Mon, 07 Nov 2011 12:20:22 UTC +00:00]]
+[paperclip] Saving attachments.
+[paperclip] saving /home/dg/Projects/yc/public/system/cvs/2/original/1504902893-2011-09.pdf
+  [1m[35m (0.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2011-11-07 12:20:22.930084', "current_sign_in_at" = '2011-11-07 12:20:22.930084', "last_sign_in_ip" = '192.168.200.1', "current_sign_in_ip" = '192.168.200.1', "sign_in_count" = 1, "updated_at" = '2011-11-07 12:20:22.930757' WHERE "users"."id" = 2
+[paperclip] Saving attachments.
+Redirected to http://192.168.200.120:3000/
+Completed 302 Found in 637ms
+
+
+Started GET "/" for 192.168.200.1 at 2011-11-07 13:20:23 +0100
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Completed 200 OK in 225ms (Views: 222.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.200.1 at 2011-11-07 13:20:23 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.200.1 at 2011-11-07 13:20:23 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.200.1 at 2011-11-07 13:20:23 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.200.1 at 2011-11-07 13:20:23 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.200.1 at 2011-11-07 13:20:23 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.200.1 at 2011-11-07 13:20:23 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 192.168.200.1 at 2011-11-07 13:20:23 +0100
+Served asset /main.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.200.1 at 2011-11-07 13:20:23 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 192.168.200.1 at 2011-11-07 13:20:29 +0100
+  Processing by Admin::DashboardController#index as HTML
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/dashboard/index.html.arb (9.8ms)
+Completed 200 OK in 61ms (Views: 20.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:20:30 +0100
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:20:30 +0100
+Served asset /active_admin.js - 304 Not Modified (1ms)
+
+
+Started GET "/admin/users" for 192.168.200.1 at 2011-11-07 13:20:31 +0100
+  Processing by Admin::UsersController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users".id desc LIMIT 30 OFFSET 0[0m
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/index.html.arb (161.8ms)
+Completed 200 OK in 304ms (Views: 168.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:20:32 +0100
+Served asset /active_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:20:32 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 192.168.200.1 at 2011-11-07 13:20:32 +0100
+Served asset /active_admin/orderable.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/users/2" for 192.168.200.1 at 2011-11-07 13:20:59 +0100
+  Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/show.html.arb (21.4ms)
+Completed 200 OK in 256ms (Views: 32.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:20:59 +0100
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:20:59 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/users/1504902893-2011-09.pdf" for 192.168.200.1 at 2011-11-07 13:21:09 +0100
+  Processing by Admin::UsersController#show as 
+  Parameters: {"id"=>"1504902893-2011-09"}
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1504902893-2011-09"]]
+Completed 404 Not Found in 135ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=1504902893-2011-09):
+  
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.4ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.7ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.2ms)
+
+
+Started GET "/admin/users/2" for 192.168.200.1 at 2011-11-07 13:24:13 +0100
+  Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/show.html.arb (145.4ms)
+Completed 200 OK in 462ms (Views: 341.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:24:14 +0100
+Served asset /active_admin.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:24:14 +0100
+Served asset /active_admin.js - 304 Not Modified (4ms)
+
+
+Started GET "/public/system/cvs/2/user.cv_file_name%7D" for 192.168.200.1 at 2011-11-07 13:24:19 +0100
+
+ActionController::RoutingError (No route matches [GET] "/public/system/cvs/2/user.cv_file_name%7D"):
+  
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/public/system/cvs/2/user.cv_file_name%7D" for 192.168.200.1 at 2011-11-07 13:25:10 +0100
+
+ActionController::RoutingError (No route matches [GET] "/public/system/cvs/2/user.cv_file_name%7D"):
+  
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (31.3ms)
+
+
+Started GET "/admin/users/2" for 192.168.200.1 at 2011-11-07 13:25:22 +0100
+  Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/show.html.arb (122.6ms)
+Completed 200 OK in 255ms (Views: 134.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:25:22 +0100
+Served asset /active_admin.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:25:22 +0100
+Served asset /active_admin.js - 304 Not Modified (6ms)
+
+
+Started GET "/public/system/cvs/2/1504902893-2011-09.pdf" for 192.168.200.1 at 2011-11-07 13:25:27 +0100
+
+ActionController::RoutingError (No route matches [GET] "/public/system/cvs/2/1504902893-2011-09.pdf"):
+  
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/public/system/cvs/2/1504902893-2011-09.pdf" for 192.168.200.1 at 2011-11-07 13:26:43 +0100
+
+ActionController::RoutingError (No route matches [GET] "/public/system/cvs/2/1504902893-2011-09.pdf"):
+  
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (27.8ms)
+
+
+Started GET "/admin/users/2" for 192.168.200.1 at 2011-11-07 13:26:46 +0100
+  Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/show.html.arb (120.9ms)
+Completed 200 OK in 253ms (Views: 134.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:26:46 +0100
+Served asset /active_admin.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:26:46 +0100
+Served asset /active_admin.js - 304 Not Modified (5ms)
+
+
+Started GET "/public/system/cvs/2/original/1504902893-2011-09.pdf" for 192.168.200.1 at 2011-11-07 13:26:50 +0100
+
+ActionController::RoutingError (No route matches [GET] "/public/system/cvs/2/original/1504902893-2011-09.pdf"):
+  
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/" for 192.168.200.1 at 2011-11-07 13:28:39 +0100
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Completed 200 OK in 239ms (Views: 236.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.200.1 at 2011-11-07 13:28:40 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.200.1 at 2011-11-07 13:28:40 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.200.1 at 2011-11-07 13:28:40 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.200.1 at 2011-11-07 13:28:40 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.200.1 at 2011-11-07 13:28:40 +0100
+Served asset /active_admin/base.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.200.1 at 2011-11-07 13:28:40 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 192.168.200.1 at 2011-11-07 13:28:40 +0100
+Served asset /main.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.200.1 at 2011-11-07 13:28:40 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 192.168.200.1 at 2011-11-07 13:28:46 +0100
+  Processing by Admin::DashboardController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/dashboard/index.html.arb (73.7ms)
+Completed 200 OK in 122ms (Views: 84.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:28:46 +0100
+Served asset /active_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:28:46 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/users" for 192.168.200.1 at 2011-11-07 13:28:48 +0100
+  Processing by Admin::UsersController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users".id desc LIMIT 30 OFFSET 0[0m
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/index.html.arb (199.3ms)
+Completed 200 OK in 336ms (Views: 204.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:28:48 +0100
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:28:48 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 192.168.200.1 at 2011-11-07 13:28:48 +0100
+Served asset /active_admin/orderable.png - 304 Not Modified (4ms)
+
+
+Started GET "/admin/users/2/edit" for 192.168.200.1 at 2011-11-07 13:29:26 +0100
+  Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mUser Load (35.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/edit.html.arb (406.6ms)
+Completed 200 OK in 605ms (Views: 377.2ms | ActiveRecord: 39.2ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:29:27 +0100
+Served asset /active_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:29:27 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/users/2" for 192.168.200.1 at 2011-11-07 13:29:34 +0100
+  Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/show.html.arb (15.6ms)
+Completed 200 OK in 146ms (Views: 22.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:29:35 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:29:35 +0100
+Served asset /active_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/admin/users/2" for 192.168.200.1 at 2011-11-07 13:37:27 +0100
+  Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdminUser Load (0.6ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/show.html.arb (187.4ms)
+Completed 500 Internal Server Error in 499ms
+
+ActionView::Template::Error (undefined method `column' for #<ActiveAdmin::Views::Pages::Show:0x0000000507ad28>):
+    1: render renderer_for(:show)
+  app/admin/users.rb:50:in `block (2 levels) in <top (required)>'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.4ms)
+
+
+Started GET "/admin/users/2" for 192.168.200.1 at 2011-11-07 13:41:19 +0100
+  Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mJob Load (0.4ms)[0m  [1mSELECT "jobs".* FROM "jobs" INNER JOIN "applications" ON "jobs"."id" = "applications"."job_id" WHERE "applications"."user_id" = 2[0m
+Rendered admin/users/_jobs.html.erb (262.4ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/show.html.arb (425.3ms)
+Completed 200 OK in 762ms (Views: 644.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:41:20 +0100
+Served asset /active_admin.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:41:20 +0100
+Served asset /active_admin.js - 304 Not Modified (5ms)
+
+
+Started GET "/" for 192.168.200.1 at 2011-11-07 13:41:30 +0100
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.9ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Completed 200 OK in 243ms (Views: 241.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.200.1 at 2011-11-07 13:41:31 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:31 +0100
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:31 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:31 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:31 +0100
+Served asset /active_admin/base.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:31 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:31 +0100
+Served asset /main.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:31 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/edit" for 192.168.200.1 at 2011-11-07 13:41:33 +0100
+  Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mJob Load (0.3ms)[0m  SELECT "jobs".* FROM "jobs" INNER JOIN "applications" ON "jobs"."id" = "applications"."job_id" WHERE "applications"."user_id" = 2
+Rendered devise/registrations/edit.html.erb within layouts/application (30.3ms)
+Completed 200 OK in 246ms (Views: 50.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.200.1 at 2011-11-07 13:41:33 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:33 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:33 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:33 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:33 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:33 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:33 +0100
+Served asset /main.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:33 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/jobs" for 192.168.200.1 at 2011-11-07 13:41:35 +0100
+  Processing by JobsController#index as HTML
+  [1m[36mJob Load (15.3ms)[0m  [1mSELECT "jobs".* FROM "jobs" ORDER BY updated_at DESC[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 3 AND "users"."id" = 2 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 4 AND "users"."id" = 2 LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 2 AND "users"."id" = 2 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 1 AND "users"."id" = 2 LIMIT 1
+Rendered jobs/index.html.erb within layouts/application (272.5ms)
+Completed 200 OK in 313ms (Views: 292.5ms | ActiveRecord: 18.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.200.1 at 2011-11-07 13:41:36 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:36 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:36 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:36 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:36 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:36 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:36 +0100
+Served asset /main.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:36 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/add_job/3" for 192.168.200.1 at 2011-11-07 13:41:37 +0100
+  Processing by JobsController#add_job as HTML
+  Parameters: {"authenticity_token"=>"WMyjs1248xSivwoIWZ0T08KOHpm3GP4J9UjPJ6pQ088=", "id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mJob Load (0.3ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mSQL (87.4ms)[0m  [1mINSERT INTO "applications" ("created_at", "job_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 07 Nov 2011 12:41:37 UTC +00:00], ["job_id", 3], ["updated_at", Mon, 07 Nov 2011 12:41:37 UTC +00:00], ["user_id", 2]]
+Redirected to http://192.168.200.120:3000/jobs
+Completed 302 Found in 340ms
+
+
+Started GET "/jobs" for 192.168.200.1 at 2011-11-07 13:41:37 +0100
+  Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" ORDER BY updated_at DESC
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 3 AND "users"."id" = 2 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 4 AND "users"."id" = 2 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 2 AND "users"."id" = 2 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 1 AND "users"."id" = 2 LIMIT 1[0m
+Rendered jobs/index.html.erb within layouts/application (246.2ms)
+Completed 200 OK in 270ms (Views: 264.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.200.1 at 2011-11-07 13:41:37 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:37 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:37 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:37 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:37 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:37 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:37 +0100
+Served asset /main.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:37 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started PUT "/add_job/4" for 192.168.200.1 at 2011-11-07 13:41:39 +0100
+  Processing by JobsController#add_job as HTML
+  Parameters: {"authenticity_token"=>"WMyjs1248xSivwoIWZ0T08KOHpm3GP4J9UjPJ6pQ088=", "id"=>"4"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "applications" ("created_at", "job_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Mon, 07 Nov 2011 12:41:39 UTC +00:00], ["job_id", 4], ["updated_at", Mon, 07 Nov 2011 12:41:39 UTC +00:00], ["user_id", 2]]
+Redirected to http://192.168.200.120:3000/jobs
+Completed 302 Found in 277ms
+
+
+Started GET "/jobs" for 192.168.200.1 at 2011-11-07 13:41:39 +0100
+  Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT "jobs".* FROM "jobs" ORDER BY updated_at DESC[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 3 AND "users"."id" = 2 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 4 AND "users"."id" = 2 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 2 AND "users"."id" = 2 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 1 AND "users"."id" = 2 LIMIT 1
+Rendered jobs/index.html.erb within layouts/application (186.6ms)
+Completed 200 OK in 274ms (Views: 266.6ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.200.1 at 2011-11-07 13:41:39 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:39 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:39 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:39 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:39 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:39 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:39 +0100
+Served asset /main.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:39 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/add_job/2" for 192.168.200.1 at 2011-11-07 13:41:40 +0100
+  Processing by JobsController#add_job as HTML
+  Parameters: {"authenticity_token"=>"WMyjs1248xSivwoIWZ0T08KOHpm3GP4J9UjPJ6pQ088=", "id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "applications" ("created_at", "job_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 07 Nov 2011 12:41:40 UTC +00:00], ["job_id", 2], ["updated_at", Mon, 07 Nov 2011 12:41:40 UTC +00:00], ["user_id", 2]]
+Redirected to http://192.168.200.120:3000/jobs
+Completed 302 Found in 186ms
+
+
+Started GET "/jobs" for 192.168.200.1 at 2011-11-07 13:41:40 +0100
+  Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" ORDER BY updated_at DESC
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 3 AND "users"."id" = 2 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 4 AND "users"."id" = 2 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 2 AND "users"."id" = 2 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 1 AND "users"."id" = 2 LIMIT 1[0m
+Rendered jobs/index.html.erb within layouts/application (176.8ms)
+Completed 200 OK in 201ms (Views: 195.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.200.1 at 2011-11-07 13:41:41 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:41 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:41 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:41 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:41 +0100
+Served asset /active_admin/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:41 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:41 +0100
+Served asset /main.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.200.1 at 2011-11-07 13:41:41 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 192.168.200.1 at 2011-11-07 13:41:47 +0100
+  Processing by Admin::DashboardController#index as HTML
+  [1m[35mAdminUser Load (0.5ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/dashboard/index.html.arb (8.5ms)
+Completed 200 OK in 120ms (Views: 18.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:41:47 +0100
+Served asset /active_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:41:47 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/users" for 192.168.200.1 at 2011-11-07 13:41:49 +0100
+  Processing by Admin::UsersController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users".id desc LIMIT 30 OFFSET 0[0m
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/index.html.arb (220.4ms)
+Completed 200 OK in 265ms (Views: 225.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:41:50 +0100
+Served asset /active_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:41:50 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 192.168.200.1 at 2011-11-07 13:41:50 +0100
+Served asset /active_admin/orderable.png - 304 Not Modified (3ms)
+
+
+Started GET "/admin/users/2" for 192.168.200.1 at 2011-11-07 13:41:51 +0100
+  Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mJob Load (0.4ms)[0m  SELECT "jobs".* FROM "jobs" INNER JOIN "applications" ON "jobs"."id" = "applications"."job_id" WHERE "applications"."user_id" = 2
+Rendered admin/users/_jobs.html.erb (22.5ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/show.html.arb (37.7ms)
+Completed 200 OK in 165ms (Views: 43.5ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:41:52 +0100
+Served asset /active_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:41:52 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/users/2" for 192.168.200.1 at 2011-11-07 13:42:54 +0100
+  Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mJob Load (0.4ms)[0m  [1mSELECT "jobs".* FROM "jobs" INNER JOIN "applications" ON "jobs"."id" = "applications"."job_id" WHERE "applications"."user_id" = 2[0m
+Rendered admin/users/_jobs.html.erb (236.7ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/show.html.arb (458.9ms)
+Completed 200 OK in 739ms (Views: 617.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:42:55 +0100
+Served asset /active_admin.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:42:55 +0100
+Served asset /active_admin.js - 304 Not Modified (4ms)
+
+
+Started GET "/admin/users/2" for 192.168.200.1 at 2011-11-07 13:43:34 +0100
+  Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mJob Load (0.3ms)[0m  SELECT "jobs".* FROM "jobs" INNER JOIN "applications" ON "jobs"."id" = "applications"."job_id" WHERE "applications"."user_id" = 2
+Rendered admin/users/_jobs.html.erb (20.5ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/show.html.arb (40.7ms)
+Completed 200 OK in 193ms (Views: 47.6ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:43:35 +0100
+Served asset /active_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:43:35 +0100
+Served asset /active_admin.js - 304 Not Modified (1ms)
+
+
+Started GET "/jobs/3" for 192.168.200.1 at 2011-11-07 13:43:39 +0100
+  Processing by JobsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT 1 FROM "users" INNER JOIN "applications" ON "users"."id" = "applications"."user_id" WHERE "applications"."job_id" = 3 AND "users"."id" = 2 LIMIT 1[0m
+Rendered jobs/show.html.erb within layouts/application (258.5ms)
+Completed 200 OK in 334ms (Views: 328.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.200.1 at 2011-11-07 13:43:39 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.200.1 at 2011-11-07 13:43:39 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.200.1 at 2011-11-07 13:43:39 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/active_admin/vendor.js?body=1" for 192.168.200.1 at 2011-11-07 13:43:39 +0100
+Served asset /active_admin/vendor.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 192.168.200.1 at 2011-11-07 13:43:39 +0100
+Served asset /active_admin/base.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 192.168.200.1 at 2011-11-07 13:43:39 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 192.168.200.1 at 2011-11-07 13:43:39 +0100
+Served asset /main.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.200.1 at 2011-11-07 13:43:39 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/admin" for 192.168.200.1 at 2011-11-07 13:44:42 +0100
+  Processing by Admin::DashboardController#index as HTML
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/dashboard/index.html.arb (76.4ms)
+Completed 200 OK in 126ms (Views: 86.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:44:42 +0100
+Served asset /active_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:44:42 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/users" for 192.168.200.1 at 2011-11-07 13:44:44 +0100
+  Processing by Admin::UsersController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "users" LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users".id desc LIMIT 30 OFFSET 0[0m
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/index.html.arb (171.8ms)
+Completed 200 OK in 226ms (Views: 177.0ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:44:44 +0100
+Served asset /active_admin.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:44:44 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 192.168.200.1 at 2011-11-07 13:44:45 +0100
+Served asset /active_admin/orderable.png - 304 Not Modified (73ms)
+
+
+Started GET "/admin/users/2" for 192.168.200.1 at 2011-11-07 13:44:48 +0100
+  Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mJob Load (0.3ms)[0m  SELECT "jobs".* FROM "jobs" INNER JOIN "applications" ON "jobs"."id" = "applications"."job_id" WHERE "applications"."user_id" = 2
+Rendered admin/users/_jobs.html.erb (86.1ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/show.html.arb (100.7ms)
+Completed 200 OK in 169ms (Views: 108.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:44:49 +0100
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:44:49 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/admin/users/2" for 192.168.200.1 at 2011-11-07 13:49:17 +0100
+  Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+Rendered admin/users/_cv.html.erb (1.0ms)
+  [1m[36mJob Load (0.4ms)[0m  [1mSELECT "jobs".* FROM "jobs" INNER JOIN "applications" ON "jobs"."id" = "applications"."job_id" WHERE "applications"."user_id" = 2[0m
+Rendered admin/users/_jobs.html.erb (262.4ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/show.html.arb (442.8ms)
+Completed 200 OK in 756ms (Views: 638.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:49:18 +0100
+Served asset /active_admin.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:49:18 +0100
+Served asset /active_admin.js - 304 Not Modified (7ms)
+
+
+Started GET "/admin/users/2" for 192.168.200.1 at 2011-11-07 13:56:11 +0100
+  Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/show.html.arb (128.3ms)
+Completed 500 Internal Server Error in 262ms
+
+ActionView::Template::Error (Missing partial admin/users/cv, active_admin/resource/cv, inherited_resources/base/cv, application/cv with {:handlers=>[:erb, :builder, :arb, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/home/dg/Projects/yc/app/views"
+  * "/home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views"
+  * "/home/dg/.rvm/gems/ruby-1.9.2-p290/gems/kaminari-0.12.4/app/views"
+  * "/home/dg/.rvm/gems/ruby-1.9.2-p290/gems/devise-1.4.9/app/views"
+):
+    1: render renderer_for(:show)
+  app/admin/users.rb:37:in `block (2 levels) in <top (required)>'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.0ms)
+
+
+Started GET "/admin/users/2" for 192.168.200.1 at 2011-11-07 13:56:12 +0100
+  Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAdminUser Load (0.5ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/show.html.arb (18.4ms)
+Completed 500 Internal Server Error in 154ms
+
+ActionView::Template::Error (Missing partial admin/users/cv, active_admin/resource/cv, inherited_resources/base/cv, application/cv with {:handlers=>[:erb, :builder, :arb, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/home/dg/Projects/yc/app/views"
+  * "/home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views"
+  * "/home/dg/.rvm/gems/ruby-1.9.2-p290/gems/kaminari-0.12.4/app/views"
+  * "/home/dg/.rvm/gems/ruby-1.9.2-p290/gems/devise-1.4.9/app/views"
+):
+    1: render renderer_for(:show)
+  app/admin/users.rb:37:in `block (2 levels) in <top (required)>'
+
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.5ms)
+
+
+Started GET "/admin/users/2" for 192.168.200.1 at 2011-11-07 13:56:46 +0100
+  Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mJob Load (0.4ms)[0m  [1mSELECT "jobs".* FROM "jobs" INNER JOIN "applications" ON "jobs"."id" = "applications"."job_id" WHERE "applications"."user_id" = 2[0m
+Rendered admin/users/_extra.html.erb (261.2ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/show.html.arb (430.8ms)
+Completed 200 OK in 765ms (Views: 639.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:56:47 +0100
+Served asset /active_admin.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:56:47 +0100
+Served asset /active_admin.js - 304 Not Modified (6ms)
+
+
+Started GET "/admin/users/2" for 192.168.200.1 at 2011-11-07 13:57:06 +0100
+  Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAdminUser Load (1.0ms)[0m  SELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mJob Load (0.4ms)[0m  SELECT "jobs".* FROM "jobs" INNER JOIN "applications" ON "jobs"."id" = "applications"."job_id" WHERE "applications"."user_id" = 2
+Rendered admin/users/_extra.html.erb (78.3ms)
+Rendered /home/dg/.rvm/gems/ruby-1.9.2-p290/gems/activeadmin-0.3.3/app/views/active_admin/resource/show.html.arb (97.0ms)
+Completed 200 OK in 356ms (Views: 104.4ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/active_admin.css" for 192.168.200.1 at 2011-11-07 13:57:07 +0100
+Served asset /active_admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/active_admin.js" for 192.168.200.1 at 2011-11-07 13:57:07 +0100
+Served asset /active_admin.js - 304 Not Modified (0ms)
