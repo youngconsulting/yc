@@ -31,10 +31,13 @@ ActiveAdmin.register User do
   end
 
 	show do
-
     attributes_table :fname, :lname, :bday, :address, :areacode, :city, :education, :info, :looking_for, :tele, :cv_file_name
 
     render "extra"
+  end
+
+  csv do
+    column :email
   end
 
 end
