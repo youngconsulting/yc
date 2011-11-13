@@ -20,46 +20,53 @@
       <%= f.text_field :fname %>
     </div>
   
-  <div class="field">
-    <%= f.label :lname, "Efternamn" %><br />
-    <%= f.text_field :lname %>
-  </div>
-  <div class="field">
-    <%= f.label :bday, "Födelsedag" %><br />
-    <%= f.text_field :bday %>(ex. 19850101)
-  </div>
-  <div class="field">
-    <%= f.label :tele, "Telefon" %><br />
-    <%= f.text_field :tele %>
-  <div class="field">
-    <%= f.label :address, "Adress" %><br />
-    <%= f.text_field :address %>
-  </div>
-  <div class="field">
-    <%= f.label :areacode, "Postnummer" %><br />
-    <%= f.text_field :areacode %>
-  </div>
-  <div class="field">
-    <%= f.label :city, "Ort" %><br />
-    <%= f.text_field :city %>
-  </div>
-  <div class="field">
-    <%= f.label :looking_for, "Söker jobb inom" %><br />
-    <%= f.select(:looking_for,[['Kontor', 'Kontor'], ['Lager/Industri', 'Lager/Industri'], ['Data/IT', 'Data/IT']]) %>
-  </div>
-  <div class="field">
-    <%= f.label :education, "Utbildning" %><br />
-    <%= f.select(:education,[['Gymnasium', 'Gymnasium'], ['Högskola', 'Högskola'], ['Universitet', 'Universitet'], ['Annan', 'Annan']]) %>
-  </div>
-  <div class="field">
-    <%= f.label :info, "Kort om din utbildning" %><br />
-    <%= f.text_area :info %>
-  </div>
-  <br /><br />
-  <div class="field">
-    <%= f.label :cv, "Ladda upp ditt CV" %>
-    <%= f.file_field :cv %>
-  </div>
-  <br /><br />
-  <div><%= f.submit "Registrera dig" %></div>
-<% end %>
+    <div class="field">
+      <%= f.label :lname, "Efternamn" %><br />
+      <%= f.text_field :lname %>
+    </div>
+    <div class="field">
+      <%= f.label :bday, "Födelsedag" %><br />
+      <%= f.text_field :bday %>(ex. 19850101)
+    </div>
+    <div class="field">
+      <%= f.label :tele, "Telefon" %><br />
+      <%= f.text_field :tele %>
+    <div class="field">
+      <%= f.label :address, "Adress" %><br />
+      <%= f.text_field :address %>
+    </div>
+    <div class="field">
+      <%= f.label :areacode, "Postnummer" %><br />
+      <%= f.text_field :areacode %>
+    </div>
+    <div class="field">
+      <%= f.label :city, "Ort" %><br />
+      <%= f.text_field :city %>
+    </div>
+    <div class="field">
+      <%= f.label :job_category_id, "Söker jobb inom" %><br />
+      <%= f.select(:job_category_id, JobCategory.all.map { |c| [c.name, c.id]} ) %>
+    </div>
+    <div class="field">
+      <%= f.label :job_category_id, "Söker jobb inom" %><br />
+      <%= JobCategory.all.each do |j| %>
+        <%= check_box_tag 'job_categories[]', j, (params[:job_categories] || {}).include?(j.id) %>
+        <br />
+      <% end %>
+    </div>
+    <div class="field">
+      <%= f.label :education, "Utbildning" %><br />
+      <%= f.select(:education,[['Gymnasium', 'Gymnasium'], ['Högskola', 'Högskola'], ['Universitet', 'Universitet'], ['Annan', 'Annan']]) %>
+    </div>
+    <div class="field">
+      <%= f.label :info, "Kort om din utbildning" %><br />
+      <%= f.text_area :info %>
+    </div>
+    <br /><br />
+    <div class="field">
+      <%= f.label :cv, "Ladda upp ditt CV" %>
+      <%= f.file_field :cv %>
+    </div>
+    <br /><br />
+    <div><%= f.submit "Registrera dig" %></div>
+  <% end %>

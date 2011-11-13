@@ -2,6 +2,7 @@
 class User < ActiveRecord::Base
   has_many :applications
   has_many :jobs, :through => :applications
+  has_many :job_categories
   
   devise :database_authenticatable, :registerable, :recoverable, :trackable, :validatable
 
